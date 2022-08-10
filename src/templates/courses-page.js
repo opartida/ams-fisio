@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Link, graphql } from 'gatsby'
+import { getImage } from 'gatsby-plugin-image'
 
-import Layout from "../components/Layout";
-import BlogRoll from "../components/BlogRoll";
-import FullWidthImage from "../components/FullWidthImage";
-import CourseList from "../components/CourseList";
+import Layout from '../components/Layout'
+import BlogRoll from '../components/BlogRoll'
+import FullWidthImage from '../components/FullWidthImage'
+import CourseList from '../components/CourseList'
 
 // eslint-disable-next-line
 export const CoursesPageTemplate = ({
@@ -18,7 +18,7 @@ export const CoursesPageTemplate = ({
   description,
   intro,
 }) => {
-  const heroImage = getImage(image) || image;
+  const heroImage = getImage(image) || image
 
   return (
     <div>
@@ -45,7 +45,7 @@ export const CoursesPageTemplate = ({
                       <p>{description}</p>
                     </div>
                   </div>
-                  <CourseList courses={intro.courses}/>                  
+                  <CourseList courses={intro.courses} />
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       Latest stories
@@ -64,8 +64,8 @@ export const CoursesPageTemplate = ({
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
 CoursesPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -77,10 +77,10 @@ CoursesPageTemplate.propTypes = {
   intro: PropTypes.shape({
     courses: PropTypes.array,
   }),
-};
+}
 
 const CoursesPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
@@ -94,8 +94,8 @@ const CoursesPage = ({ data }) => {
         intro={frontmatter.intro}
       />
     </Layout>
-  );
-};
+  )
+}
 
 CoursesPage.propTypes = {
   data: PropTypes.shape({
@@ -103,9 +103,9 @@ CoursesPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-};
+}
 
-export default CoursesPage;
+export default CoursesPage
 
 export const pageQuery = graphql`
   query CoursesPageTemplate {
@@ -132,6 +132,7 @@ export const pageQuery = graphql`
               }
             }
             text
+            title
           }
           heading
           description
@@ -139,4 +140,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

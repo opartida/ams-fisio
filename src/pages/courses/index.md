@@ -14,33 +14,25 @@ description: >-
   Cada uno de nuestros cursos tiene como objetivo preparar al fisioterapeuta para ser capaz de valorar y tratar las distintas disfunciones del suelo pélvico que padecen los pacientes con los que se va a encontrar en la práctica clínica diaria.
 intro:
   courses:
-    - image: /img/coffee.png
+    - image: /img/cursos/curso-uroginecologia-obstetricia.jpg
+      title: >
+        CURSO FISIOTERAPIA EN UROGINECOLOGÍA Y OBSTETRICIA: disfunciones pelviperineales (XXVII EDICIÓN)
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/coffee-gear.png
+        ¡¡Vamos a por la edición nº 27!! Las señas de identidad de este curso referencia en España en el campo de la fisioterapia en uroginecología siguen intactas: profesorado a la vanguardia en la especialidad de fisioterapia en suelo pélvico con una extensa trayectoria clínica y docente, conocimientos y competencias sobre las distintas disfunciones pelviperineales y su tratamiento en la mujer, un seminario de ecografía funcional abdomino-perineal que integra todos los conocimientos adquiridos y posibilidad de realizar estancias clínicas en unidades especializadas para completar la formación adquirida.
+    - image: /img/cursos/curso-fisioterapia-suelo-pelvico.jpg
+      title: > 
+        CURSO FISIOTERAPIA EN EL SUELO PÉLVICO DEL HOMBRE: Incontinencia urinaria y disfunciones sexuales IIIª Edición
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
+        El Dr. Antonio Meldaña Sánchez imparte este curso dirigido a aquellos fisioterapeutas que quieran continuar y profundizar en su especialización en la fisioterapia de suelo pélvico. Las disfunciones del suelo pélvico en el varón son cada vez más conocidas por la población general, aumentando exponencialmente el numero de hombres que actualmente acuden a consulta por el estado de su suelo pélvico, ya sea porque padecen incontinencia urinaria tras cirugía por cáncer de próstata, o para mejorar su salud y calidad sexual. Este curso se desarrolla en 20 horas en las que se profundizará en la anatomía del suelo pélvico masculino, la patofisiología de las distintas disfunciones y en los últimos avances en técnicas y tecnología para su abordaje, siempre desde el enfoque de la fisioterapia basada en la evidencia y en nuestra experiencia clínica.
+    - image: /img/curso-fisioterapia-obstetrica.jpg
+      title: >
+        FISIOTERAPIA OBSTÉTRICA: EMBARAZO, PARTO Y POSTPARTO (VII EDICIÓN)
       text: >
         Love a great cup of coffee, but never knew how to make one? Bought a
         fancy new Chemex but have no clue how to use it? Don't worry, we’re here
         to help. You can schedule a custom 1-on-1 consultation with our baristas
         to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        Email us or call the store for details.   
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

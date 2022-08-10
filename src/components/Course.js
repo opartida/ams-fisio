@@ -1,8 +1,8 @@
-import * as React from "react";
-import PropTypes from "prop-types";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import * as React from 'react'
+import PropTypes from 'prop-types'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
 
-const Curso = ({ gridItems }) => (
+const Course = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map((item) => (
       <div key={item.text} className="column is-6">
@@ -10,8 +10,8 @@ const Curso = ({ gridItems }) => (
           <div className="has-text-centered">
             <div
               style={{
-                width: "100%",
-                display: "inline-block",
+                width: '100%',
+                display: 'inline-block',
               }}
             >
               <PreviewCompatibleImage imageInfo={item} />
@@ -22,15 +22,15 @@ const Curso = ({ gridItems }) => (
       </div>
     ))}
   </div>
-);
+)
 
-Curso.propTypes = {
+Course.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       text: PropTypes.string,
     })
   ),
-};
+}
 
-export default Curso;
+export default Course

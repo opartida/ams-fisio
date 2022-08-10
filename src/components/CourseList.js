@@ -8,7 +8,9 @@ const CourseList = ({ courses }) => (
       <div key={item.text} className="column is-6">
         <section className="section">
           <div className="has-text-centered">
+            <h3>{item.title}</h3>
             <div
+              className="mb-4"
               style={{
                 width: "100%",
                 display: "inline-block",
@@ -18,6 +20,10 @@ const CourseList = ({ courses }) => (
             </div>
           </div>
           <p>{item.text}</p>
+          <div class="buttons is-centered">
+            <button class="button is-primary">Mas info</button>
+            <button class="button is-primary">Inscríbete</button>
+          </div>
         </section>
       </div>
     ))}
@@ -28,6 +34,7 @@ CourseList.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      title: PropTypes.string,
       text: PropTypes.string,
     })
   ),
