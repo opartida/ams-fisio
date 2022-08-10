@@ -6,7 +6,7 @@ const CourseList = ({ courses }) => (
   <div className="columns is-multiline">
     {courses.map((item) => (
       <div key={item.text} className="column is-6">
-        <section className="section">
+        <section className="section box">
           <div className="has-text-centered">
             <h3>{item.title}</h3>
             <div
@@ -19,8 +19,26 @@ const CourseList = ({ courses }) => (
               <PreviewCompatibleImage imageInfo={item} />
             </div>
           </div>
-          <p>{item.text}</p>
-          <div class="buttons is-centered">
+          <div className="panel-block">
+            <p>{item.text}</p>
+          </div>
+          <div className="panel-block">
+            <div className="list">
+              <div className="list-item">
+                <span className="has-text-weight-bold">Lugar: </span>
+                {item.place}
+              </div>
+              <div className="list-item">
+                <span className="has-text-weight-bold">Fechas: </span>
+                {item.dates}
+              </div>
+              <div className="list-item">
+                <span className="has-text-weight-bold">Duración: </span>
+                {item.duration}
+              </div>
+            </div>
+          </div>
+          <div class="buttons is-centered mt-5">
             <button class="button is-primary">Mas info</button>
             <button class="button is-primary">Inscríbete</button>
           </div>
@@ -36,6 +54,9 @@ CourseList.propTypes = {
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       title: PropTypes.string,
       text: PropTypes.string,
+      place: PropTypes.string,
+      dates: PropTypes.string,
+      duration: PropTypes.string,
     })
   ),
 };

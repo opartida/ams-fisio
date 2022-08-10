@@ -1,6 +1,6 @@
 ---
 templateKey: 'courses-page'
-path: /cursos
+path: /courses
 title: Formación
 image: /img/jumbotron.jpg
 heading: Cursos Propios
@@ -17,22 +17,38 @@ intro:
     - image: /img/cursos/curso-uroginecologia-obstetricia.jpg
       title: >
         CURSO FISIOTERAPIA EN UROGINECOLOGÍA Y OBSTETRICIA: disfunciones pelviperineales (XXVII EDICIÓN)
+      place: >
+        Aulas de Formación Fisiocampus Madrid. Calle San Máximo 31, 4º planta- Módulo 5, 28041 Madrid.
+      dates: >
+        1 y 2 de octubre, 22 y 23 de octubre 5 y 6 de noviembre, 19 y 20 noviembre, 17 y 18 de diciembre de 2022
+      duration: >
+        75 horas (5 seminarios teórico-prácticos).
+
       text: >
         ¡¡Vamos a por la edición nº 27!! Las señas de identidad de este curso referencia en España en el campo de la fisioterapia en uroginecología siguen intactas: profesorado a la vanguardia en la especialidad de fisioterapia en suelo pélvico con una extensa trayectoria clínica y docente, conocimientos y competencias sobre las distintas disfunciones pelviperineales y su tratamiento en la mujer, un seminario de ecografía funcional abdomino-perineal que integra todos los conocimientos adquiridos y posibilidad de realizar estancias clínicas en unidades especializadas para completar la formación adquirida.
     - image: /img/cursos/curso-fisioterapia-suelo-pelvico.jpg
       title: > 
         CURSO FISIOTERAPIA EN EL SUELO PÉLVICO DEL HOMBRE: Incontinencia urinaria y disfunciones sexuales IIIª Edición
+      place: >
+        Aulas de Formación Fisiocampus Madrid. Calle San Máximo 31, 4º planta- Módulo 5, 28041 Madrid.
+      dates: >
+        21, 22 y 23 de octubre de 2022.
+      duration: >
+        20 horas (1seminario teórico-práctico).
       text: >
         El Dr. Antonio Meldaña Sánchez imparte este curso dirigido a aquellos fisioterapeutas que quieran continuar y profundizar en su especialización en la fisioterapia de suelo pélvico. Las disfunciones del suelo pélvico en el varón son cada vez más conocidas por la población general, aumentando exponencialmente el numero de hombres que actualmente acuden a consulta por el estado de su suelo pélvico, ya sea porque padecen incontinencia urinaria tras cirugía por cáncer de próstata, o para mejorar su salud y calidad sexual. Este curso se desarrolla en 20 horas en las que se profundizará en la anatomía del suelo pélvico masculino, la patofisiología de las distintas disfunciones y en los últimos avances en técnicas y tecnología para su abordaje, siempre desde el enfoque de la fisioterapia basada en la evidencia y en nuestra experiencia clínica.
-    - image: /img/curso-fisioterapia-obstetrica.jpg
+    - image: /img/curso-fisioterapia-obstetrica.jpeg
       title: >
         FISIOTERAPIA OBSTÉTRICA: EMBARAZO, PARTO Y POSTPARTO (VII EDICIÓN)
+      place: >
+        
+      dates: >
+        Pendiente confirmación de fechas 2021.
+      duration: >
+        Pendiente confirmación de fechas 2021.
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.   
+        PRÓXIMAMENTE FECHAS PENDIENTES DE CONFIRMACIÓN EN 2021
+        La próxima edición del curso Fisioterapia Obstétrica: Embarazo, Parto y Postparto está pendiente de confirmar sus fechas para 2021. Cuando toda la información esté disponible lo comunicaremos en la web y a través de las redes sociales.  
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
