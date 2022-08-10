@@ -35,8 +35,7 @@ collections:
 
   - name: "pages"
     label: "Pages"
-    files:
-      - file: "src/pages/courses/index.md"
+    files:      
         label: "Courses Page"
         name: "courses"
         fields:
