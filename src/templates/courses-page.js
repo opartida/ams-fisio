@@ -4,12 +4,12 @@ import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
+import CourseList from "../components/CourseList";
 
 // eslint-disable-next-line
-export const IndexPageTemplate = ({
+export const CoursesPageTemplate = ({
   image,
   title,
   heading,
@@ -45,8 +45,7 @@ export const IndexPageTemplate = ({
                       <p>{description}</p>
                     </div>
                   </div>
-                  <Features gridItems={intro.blurbs} />
-                  
+                  <CourseList courses={intro.courses}/>                  
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       Latest stories
@@ -68,7 +67,7 @@ export const IndexPageTemplate = ({
   );
 };
 
-IndexPageTemplate.propTypes = {
+CoursesPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -76,16 +75,16 @@ IndexPageTemplate.propTypes = {
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+    courses: PropTypes.array,
   }),
 };
 
-const IndexPage = ({ data }) => {
+const CoursesPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
-      <IndexPageTemplate
+      <CoursesPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -98,7 +97,7 @@ const IndexPage = ({ data }) => {
   );
 };
 
-IndexPage.propTypes = {
+CoursesPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -106,11 +105,11 @@ IndexPage.propTypes = {
   }),
 };
 
-export default IndexPage;
+export default CoursesPage;
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+  query CoursesPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "courses-page" } }) {
       frontmatter {
         title
         image {
@@ -126,7 +125,7 @@ export const pageQuery = graphql`
         }
         description
         intro {
-          blurbs {
+          courses {
             image {
               childImageSharp {
                 gatsbyImageData(width: 340, quality: 100, layout: CONSTRAINED)
