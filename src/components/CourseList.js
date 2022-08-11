@@ -1,13 +1,13 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, StaticQuery } from 'gatsby'
 
 class CourseListTemplate extends React.Component {
   render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
-    
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
+
     return (
       <div className="columns is-multiline">
         {posts.map((item) => (
@@ -18,11 +18,13 @@ class CourseListTemplate extends React.Component {
                 <div
                   className="mb-4"
                   style={{
-                    width: "100%",
-                    display: "inline-block",
+                    width: '100%',
+                    display: 'inline-block',
                   }}
                 >
-                  <PreviewCompatibleImage imageInfo={item.node.frontmatter.featuredimage} />
+                  <PreviewCompatibleImage
+                    imageInfo={item.node.frontmatter.featuredimage}
+                  />
                 </div>
               </div>
               <div className="panel-block">
@@ -52,10 +54,9 @@ class CourseListTemplate extends React.Component {
           </div>
         ))}
       </div>
-    );
+    )
   }
 }
-
 
 CourseList.propTypes = {
   data: PropTypes.shape({

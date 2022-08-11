@@ -62,7 +62,7 @@ CoursePageTemplate.propTypes = {
 }
 
 const CoursePage = ({ data }) => {
-  const { markdownRemark: post } = data  
+  const { markdownRemark: post } = data
   return (
     <Layout>
       <CoursePageTemplate
@@ -92,7 +92,7 @@ CoursePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
-};
+}
 
 export default CoursePage
 
