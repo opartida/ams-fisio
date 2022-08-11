@@ -11,6 +11,9 @@ export const CoursePageTemplate = ({
   content,
   contentComponent,
   description,
+  dates,
+  place,
+  duration,
   tags,
   title,
   helmet,
@@ -52,11 +55,14 @@ CoursePageTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  place: PropTypes.string,
+  dates: PropTypes.string,
+  duration: PropTypes.string,
   helmet: PropTypes.object,
 }
 
 const CoursePage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data  
   return (
     <Layout>
       <CoursePageTemplate
@@ -74,6 +80,9 @@ const CoursePage = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        place={post.frontmatter.place}
+        dates={post.frontmatter.dates}
+        duration={post.frontmatter.duration}
       />
     </Layout>
   )
@@ -88,7 +97,7 @@ CoursePage.propTypes = {
 export default CoursePage
 
 export const pageQuery = graphql`
-  query CoursepageByID($id: String!) {
+  query CoursePageByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -96,6 +105,9 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        place
+        dates
+        duration
         tags
       }
     }

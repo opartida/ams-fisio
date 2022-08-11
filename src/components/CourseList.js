@@ -7,14 +7,14 @@ class CourseListTemplate extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
-    console.log('entro', data)
+    
     return (
       <div className="columns is-multiline">
         {posts.map((item) => (
-          <div key={item.text} className="column is-6">
+          <div key={item.node.frontmatter.text} className="column is-6">
             <section className="section box">
               <div className="has-text-centered">
-                <h3>{item.title}</h3>
+                <h3>{item.node.frontmatter.title}</h3>
                 <div
                   className="mb-4"
                   style={{
@@ -22,25 +22,25 @@ class CourseListTemplate extends React.Component {
                     display: "inline-block",
                   }}
                 >
-                  <PreviewCompatibleImage imageInfo={item} />
+                  <PreviewCompatibleImage imageInfo={item.node.frontmatter.featuredimage} />
                 </div>
               </div>
               <div className="panel-block">
-                <p>{item.text}</p>
+                <p>{item.node.frontmatter.description}</p>
               </div>
               <div className="panel-block">
                 <div className="list">
                   <div className="list-item">
                     <span className="has-text-weight-bold">Lugar: </span>
-                    {item.place}
+                    {item.node.frontmatter.place}
                   </div>
                   <div className="list-item">
                     <span className="has-text-weight-bold">Fechas: </span>
-                    {item.dates}
+                    {item.node.frontmatter.dates}
                   </div>
                   <div className="list-item">
                     <span className="has-text-weight-bold">Duración: </span>
-                    {item.duration}
+                    {item.node.frontmatter.duration}
                   </div>
                 </div>
               </div>
@@ -89,12 +89,16 @@ export default function CourseList() {
                   featuredimage {
                     childImageSharp {
                       gatsbyImageData(
-                        width: 120
+                        width: 440
                         quality: 100
                         layout: CONSTRAINED
                       )
                     }
                   }
+                  description
+                  place
+                  dates
+                  duration
                 }
               }
             }

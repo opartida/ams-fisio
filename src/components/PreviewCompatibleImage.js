@@ -5,6 +5,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 const PreviewCompatibleImage = ({ imageInfo }) => {
   const imageStyle = { borderRadius: '5px' }
 
+  console.log('entro', imageInfo)
   const { alt = '', childImageSharp, image } = imageInfo
 
   if (!!image && !!image.childImageSharp) {

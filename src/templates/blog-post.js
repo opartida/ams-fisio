@@ -57,7 +57,6 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
-  console.log('entro')
   return (
     <Layout>
       <BlogPostTemplate
