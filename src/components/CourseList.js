@@ -1,8 +1,9 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import {StaticQuery} from "gatsby"
 
-const CourseList = ({ courses }) => (
+const CourseListTemplate = ({ courses }) => (
   <div className="columns is-multiline">
     {courses.map((item) => (
       <div key={item.text} className="column is-6">
@@ -49,16 +50,55 @@ const CourseList = ({ courses }) => (
 );
 
 CourseList.propTypes = {
-  gridItems: PropTypes.arrayOf(
-    PropTypes.shape({
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      title: PropTypes.string,
-      text: PropTypes.string,
-      place: PropTypes.string,
-      dates: PropTypes.string,
-      duration: PropTypes.string,
-    })
-  ),
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.array,
+    }),
+  }),
 };
 
-export default CourseList;
+
+export default function CourseList() {
+  return (
+    <StaticQuery
+      query={graphql`
+        query CoursePageQuery {
+          allMarkdownRemark(
+            sort: { order: DESC, fields: [frontmatter___date] }
+            filter: { frontmatter: { templateKey: { eq: "course-page" } } }
+          ) {
+            edges {
+              node {
+                excerpt(pruneLength: 400)
+                id
+                fields {
+                  slug
+                }
+                frontmatter {
+                  title
+                  templateKey
+                  date(formatString: "MMMM DD, YYYY")
+                  featuredpost
+                  featuredimage {
+                    childImageSharp {
+                      gatsbyImageData(
+                        width: 120
+                        quality: 100
+                        layout: CONSTRAINED
+                      )
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={(data, count) => <CourseListTemplate data={data} count={count} />}
+    />
+  );
+}
+
+
+
+
