@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
-import Layout from "../components/Layout";
-import Features from "../components/Features";
-import Testimonials from "../components/Testimonials";
-import Pricing from "../components/Pricing";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import FullWidthImage from "../components/FullWidthImage";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import { getImage } from 'gatsby-plugin-image'
+import Layout from '../components/Layout'
+import Features from '../components/Features'
+import Testimonials from '../components/Testimonials'
+import Pricing from '../components/Pricing'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import FullWidthImage from '../components/FullWidthImage'
 
 // eslint-disable-next-line
 export const CoursePageTemplate = ({
@@ -21,8 +21,8 @@ export const CoursePageTemplate = ({
   fullImage,
   pricing,
 }) => {
-  const heroImage = getImage(image) || image;
-  const fullWidthImage = getImage(fullImage) || fullImage;
+  const heroImage = getImage(image) || image
+  const fullWidthImage = getImage(fullImage) || fullImage
 
   return (
     <div className="content">
@@ -76,7 +76,7 @@ export const CoursePageTemplate = ({
           </div>
         </div>
       </section>
-      <FullWidthImage img={fullWidthImage} imgPosition={"bottom"} />
+      <FullWidthImage img={fullWidthImage} imgPosition={'bottom'} />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -93,8 +93,8 @@ export const CoursePageTemplate = ({
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
 CoursePageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -118,10 +118,10 @@ CoursePageTemplate.propTypes = {
     description: PropTypes.string,
     plans: PropTypes.array,
   }),
-};
+}
 
 const CoursePage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
@@ -137,8 +137,8 @@ const CoursePage = ({ data }) => {
         pricing={frontmatter.pricing}
       />
     </Layout>
-  );
-};
+  )
+}
 
 CoursePage.propTypes = {
   data: PropTypes.shape({
@@ -146,9 +146,9 @@ CoursePage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-};
+}
 
-export default CoursePage;
+export default CoursePage
 
 export const coursePageQuery = graphql`
   query CoursePage($id: String!) {
@@ -225,4 +225,4 @@ export const coursePageQuery = graphql`
       }
     }
   }
-`;
+`

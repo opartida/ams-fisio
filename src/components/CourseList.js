@@ -1,7 +1,7 @@
-import * as React from "react";
-import PropTypes from "prop-types";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
-import {StaticQuery} from "gatsby"
+import * as React from 'react'
+import PropTypes from 'prop-types'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
+import { graphql, StaticQuery } from "gatsby";
 
 const CourseListTemplate = ({ courses }) => (
   <div className="columns is-multiline">
@@ -13,8 +13,8 @@ const CourseListTemplate = ({ courses }) => (
             <div
               className="mb-4"
               style={{
-                width: "100%",
-                display: "inline-block",
+                width: '100%',
+                display: 'inline-block',
               }}
             >
               <PreviewCompatibleImage imageInfo={item} />
@@ -47,7 +47,7 @@ const CourseListTemplate = ({ courses }) => (
       </div>
     ))}
   </div>
-);
+)
 
 CourseList.propTypes = {
   data: PropTypes.shape({
@@ -55,8 +55,7 @@ CourseList.propTypes = {
       edges: PropTypes.array,
     }),
   }),
-};
-
+}
 
 export default function CourseList() {
   return (
@@ -96,9 +95,5 @@ export default function CourseList() {
       `}
       render={(data, count) => <CourseListTemplate data={data} count={count} />}
     />
-  );
+  )
 }
-
-
-
-

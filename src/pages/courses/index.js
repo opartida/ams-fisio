@@ -1,8 +1,6 @@
-
 import * as React from 'react'
 
 import Layout from '../../components/Layout'
-
 
 export default class CourseIndexPage extends React.Component {
   render() {
@@ -28,9 +26,7 @@ export default class CourseIndexPage extends React.Component {
         </div>
         <section className="section">
           <div className="container">
-            <div className="content">
-              
-            </div>
+            <div className="content"></div>
           </div>
         </section>
       </Layout>
