@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 // eslint-disable-next-line
-export const CoursepageTemplate = ({
+export const CoursePageTemplate = ({
   content,
   contentComponent,
   description,
@@ -47,7 +47,7 @@ export const CoursepageTemplate = ({
   )
 }
 
-CoursepageTemplate.propTypes = {
+CoursePageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -59,7 +59,7 @@ const CoursePage = ({ data }) => {
   const { markdownRemark: post } = data
   return (
     <Layout>
-      <CoursepageTemplate
+      <CoursePageTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
@@ -79,11 +79,11 @@ const CoursePage = ({ data }) => {
   )
 }
 
-BlogPost.propTypes = {
+CoursePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
-}
+};
 
 export default CoursePage
 

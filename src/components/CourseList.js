@@ -3,51 +3,59 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 import { graphql, StaticQuery } from "gatsby";
 
-const CourseListTemplate = ({ courses }) => (
-  <div className="columns is-multiline">
-    {courses.map((item) => (
-      <div key={item.text} className="column is-6">
-        <section className="section box">
-          <div className="has-text-centered">
-            <h3>{item.title}</h3>
-            <div
-              className="mb-4"
-              style={{
-                width: '100%',
-                display: 'inline-block',
-              }}
-            >
-              <PreviewCompatibleImage imageInfo={item} />
-            </div>
-          </div>
-          <div className="panel-block">
-            <p>{item.text}</p>
-          </div>
-          <div className="panel-block">
-            <div className="list">
-              <div className="list-item">
-                <span className="has-text-weight-bold">Lugar: </span>
-                {item.place}
+class CourseListTemplate extends React.Component {
+  render() {
+    const { data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
+    console.log('entro', data)
+    return (
+      <div className="columns is-multiline">
+        {posts.map((item) => (
+          <div key={item.text} className="column is-6">
+            <section className="section box">
+              <div className="has-text-centered">
+                <h3>{item.title}</h3>
+                <div
+                  className="mb-4"
+                  style={{
+                    width: "100%",
+                    display: "inline-block",
+                  }}
+                >
+                  <PreviewCompatibleImage imageInfo={item} />
+                </div>
               </div>
-              <div className="list-item">
-                <span className="has-text-weight-bold">Fechas: </span>
-                {item.dates}
+              <div className="panel-block">
+                <p>{item.text}</p>
               </div>
-              <div className="list-item">
-                <span className="has-text-weight-bold">Duración: </span>
-                {item.duration}
+              <div className="panel-block">
+                <div className="list">
+                  <div className="list-item">
+                    <span className="has-text-weight-bold">Lugar: </span>
+                    {item.place}
+                  </div>
+                  <div className="list-item">
+                    <span className="has-text-weight-bold">Fechas: </span>
+                    {item.dates}
+                  </div>
+                  <div className="list-item">
+                    <span className="has-text-weight-bold">Duración: </span>
+                    {item.duration}
+                  </div>
+                </div>
               </div>
-            </div>
+              <div class="buttons is-centered mt-5">
+                <button class="button is-primary">Mas info</button>
+                <button class="button is-primary">Inscríbete</button>
+              </div>
+            </section>
           </div>
-          <div class="buttons is-centered mt-5">
-            <button class="button is-primary">Mas info</button>
-            <button class="button is-primary">Inscríbete</button>
-          </div>
-        </section>
+        ))}
       </div>
-    ))}
-  </div>
-)
+    );
+  }
+}
+
 
 CourseList.propTypes = {
   data: PropTypes.shape({
