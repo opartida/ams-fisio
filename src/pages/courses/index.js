@@ -23,7 +23,7 @@ export default class CourseIndexPage extends React.Component {
               padding: '1rem',
             }}
           >
-            Latest Stories
+            Cursos Propios
           </h1>
         </div>
         <section className="section">
