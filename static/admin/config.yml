@@ -52,6 +52,9 @@ collections:
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Place", name: "place", widget: "text" }
+      - { label: "Dates", name: "dates", widget: "text" }
+      - { label: "Duration", name: "duration", widget: "text" }
 
   - name: "pages"
     label: "Pages"
