@@ -16,7 +16,7 @@ class CourseListTemplate extends React.Component {
             <div key={item.node.frontmatter.text} className="column is-6">
               <section className="section box">
                 <div className="has-text-centered">
-                  <h3>{item.node.frontmatter.title}</h3>
+                  <h3>{item.node.frontmatter.longtitle}</h3>
                   <div
                     className="mb-4  mt-4"
                     style={{
@@ -114,7 +114,7 @@ export default function CourseList() {
                   slug
                 }
                 frontmatter {
-                  title
+                  longtitle
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
                   featuredpost

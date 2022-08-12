@@ -15,7 +15,9 @@ export const CoursePageTemplate = ({
   place,
   duration,
   tags,
+  longtitle,
   title,
+  subtitle,
   featuredimage,
   helmet,
 }) => {
@@ -24,7 +26,7 @@ export const CoursePageTemplate = ({
 
   return (
     <>
-      <FullWidthImage img={heroImage} title={title} subheading="" />
+      <FullWidthImage img={heroImage} title={title} subheading={subtitle} />
       <section className="section">
         {helmet || ""}
         <div className="container content">
@@ -56,6 +58,8 @@ CoursePageTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  subtitle: PropTypes.string,
+  longtitle: PropTypes.string,
   place: PropTypes.string,
   dates: PropTypes.string,
   duration: PropTypes.string,
@@ -81,6 +85,7 @@ const CoursePage = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        subtitle={post.frontmatter.subtitle}
         place={post.frontmatter.place}
         dates={post.frontmatter.dates}
         duration={post.frontmatter.duration}
@@ -110,7 +115,9 @@ export const pageQuery = graphql`
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         }
+        longtitle
         title
+        subtitle
         description
         place
         dates
