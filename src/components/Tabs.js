@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react'
 
 const Tab = (props) => {
-  const { name } = props.tab;
-  const { activeTab, changeActiveTab } = props;
+  const { name } = props.tab
+  const { activeTab, changeActiveTab } = props
 
   return (
     <li
-      className={name === activeTab && "is-active"}
+      className={name === activeTab && 'is-active'}
       onClick={() => changeActiveTab(name)}
     >
       <a>
@@ -14,10 +14,8 @@ const Tab = (props) => {
         <span>{name}</span>
       </a>
     </li>
-  );
-};
-
-
+  )
+}
 
 class Tabs extends React.Component {
   render() {
@@ -34,7 +32,7 @@ class Tabs extends React.Component {
           ))}
         </ul>
       </div>
-    );
+    )
   }
 }
-export default Tabs;
+export default Tabs

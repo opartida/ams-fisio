@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import FullWidthImage from '../components/FullWidthImage'
-import Carousel from "../components/Carousel";
+import Carousel from '../components/Carousel'
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -18,30 +18,24 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
+  carousel,
 }) => {
   const heroImage = getImage(image) || image
-
+  const getSlides = (carousel) => {
+    return carousel.map((elem) => {
+      const image = getImage(elem.image) || elem.image
+      return (
+        <FullWidthImage
+          img={image}
+          title={elem.title}
+          subheading={elem.subheading}
+        />
+      )
+    })
+  }
   return (
     <div>
-      <Carousel
-        slides={[
-          <FullWidthImage
-            img={heroImage}
-            title={title}
-            subheading={subheading}
-          />,
-          <FullWidthImage
-            img={heroImage}
-            title={title}
-            subheading={subheading}
-          />,
-          <FullWidthImage
-            img={heroImage}
-            title={title}
-            subheading={subheading}
-          />,
-        ]}
-      />
+      <Carousel slides={getSlides(carousel)} />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -50,7 +44,9 @@ export const IndexPageTemplate = ({
                 <div className="content">
                   <div className="content">
                     <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
+                      <h1 className="title">
+                        <span className=" is-primary">{mainpitch.title}</span>
+                      </h1>
                     </div>
                     <div className="tile">
                       <h3 className="subtitle">{mainpitch.description}</h3>
@@ -97,6 +93,7 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
+  carousel: PropTypes.array,
 }
 
 const IndexPage = ({ data }) => {
@@ -112,6 +109,7 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        carousel={frontmatter.carousel}
       />
     </Layout>
   )
@@ -136,6 +134,15 @@ export const pageQuery = graphql`
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
+        }
+        carousel {
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: CONSTRAINED)
+            }
+          }
+          title
+          subheading
         }
         heading
         subheading

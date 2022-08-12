@@ -1,51 +1,51 @@
-import React from "react";
-import Tabs from './Tabs';
-import { useState } from 'react';
+import React from 'react'
+import Tabs from './Tabs'
+import { useState } from 'react'
 
-const Course = ()=> {
-  const [activeTab, setActiveTab] = useState('Información general');  
+const Course = () => {
+  const [activeTab, setActiveTab] = useState('Información general')
 
-  const ActiveTabContent = (props) => <div>{props.content}</div>;
-  
+  const ActiveTabContent = (props) => <div>{props.content}</div>
+
   // eslint-disable-next-line
   const tabList = [
     {
-      name: "Información general",
-      icon: "",
-      content: "Stuff 1",
+      name: 'Información general',
+      icon: '',
+      content: 'Stuff 1',
     },
     {
-      name: "Programa",
-      icon: "",
-      content: "Stuff 2",
+      name: 'Programa',
+      icon: '',
+      content: 'Stuff 2',
     },
     {
-      name: "Profesores",
-      icon: "",
-      content: "Stuff 3",
+      name: 'Profesores',
+      icon: '',
+      content: 'Stuff 3',
     },
     {
-      name: "Objetivos",
-      icon: "",
-      content: "Stuff 4",
+      name: 'Objetivos',
+      icon: '',
+      content: 'Stuff 4',
     },
     {
-      name: "Metodología docente",
-      icon: "",
-      content: "Stuff 5",
+      name: 'Metodología docente',
+      icon: '',
+      content: 'Stuff 5',
     },
     {
-      name: "Acreditación y/o certificado",
-      icon: "",
-      content: "Stuff 6",
+      name: 'Acreditación y/o certificado',
+      icon: '',
+      content: 'Stuff 6',
     },
-  ];
+  ]
 
   const activeTabContent = () => {
     const activeIndex = tabList.findIndex((tab) => {
-      return tab.name === activeTab;
-    });
-    return tabList[activeIndex].content;
+      return tab.name === activeTab
+    })
+    return tabList[activeIndex].content
   }
 
   return (
@@ -62,7 +62,7 @@ const Course = ()=> {
         </div>
       </section>
     </div>
-  );
+  )
 }
 
-export default Course;
+export default Course

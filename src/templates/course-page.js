@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
-import { Helmet } from "react-helmet";
-import { graphql, Link } from "gatsby";
-import Layout from "../components/Layout";
-import Course from "../components/Course";
-import FullWidthImage from "../components/FullWidthImage"; 
-import { getImage } from "gatsby-plugin-image";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { kebabCase } from 'lodash'
+import { Helmet } from 'react-helmet'
+import { graphql, Link } from 'gatsby'
+import Layout from '../components/Layout'
+import Course from '../components/Course'
+import FullWidthImage from '../components/FullWidthImage'
+import { getImage } from 'gatsby-plugin-image'
 
 // eslint-disable-next-line
 export const CoursePageTemplate = ({
@@ -21,17 +21,17 @@ export const CoursePageTemplate = ({
   featuredimage,
   helmet,
 }) => {
-  const courseInfo = { description, dates, place, duration };
-  const heroImage = getImage(featuredimage) || featuredimage;
+  const courseInfo = { description, dates, place, duration }
+  const heroImage = getImage(featuredimage) || featuredimage
 
   return (
     <>
       <FullWidthImage img={heroImage} title={title} subheading={subtitle} />
       <section className="section">
-        {helmet || ""}
+        {helmet || ''}
         <div className="container content">
           <div className="columns">
-            <div className="column is-10 is-offset-1">              
+            <div className="column is-10 is-offset-1">
               <Course {...courseInfo} />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
@@ -50,8 +50,8 @@ export const CoursePageTemplate = ({
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
 CoursePageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
@@ -65,10 +65,10 @@ CoursePageTemplate.propTypes = {
   duration: PropTypes.string,
   featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   helmet: PropTypes.object,
-};
+}
 
 const CoursePage = ({ data }) => {
-  const { markdownRemark: post } = data;
+  const { markdownRemark: post } = data
   return (
     <Layout>
       <CoursePageTemplate
@@ -92,16 +92,16 @@ const CoursePage = ({ data }) => {
         featuredimage={post.frontmatter.featuredimage}
       />
     </Layout>
-  );
-};
+  )
+}
 
 CoursePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
-};
+}
 
-export default CoursePage;
+export default CoursePage
 
 export const pageQuery = graphql`
   query CoursePageByID($id: String!) {
@@ -126,4 +126,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

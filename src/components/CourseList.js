@@ -1,13 +1,13 @@
-import * as React from "react";
-import PropTypes from "prop-types";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
-import { graphql, Link, StaticQuery } from "gatsby";
-import { FaCalendarAlt, FaClock, FaHome } from "react-icons/fa";
+import * as React from 'react'
+import PropTypes from 'prop-types'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
+import { graphql, Link, StaticQuery } from 'gatsby'
+import { FaCalendarAlt, FaClock, FaHome } from 'react-icons/fa'
 
 class CourseListTemplate extends React.Component {
   render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
 
     return (
       <div className="columns is-multiline">
@@ -20,8 +20,8 @@ class CourseListTemplate extends React.Component {
                   <div
                     className="mb-4  mt-4"
                     style={{
-                      width: "100%",
-                      display: "inline-block",
+                      width: '100%',
+                      display: 'inline-block',
                     }}
                   >
                     <PreviewCompatibleImage
@@ -82,10 +82,10 @@ class CourseListTemplate extends React.Component {
                 </div>
               </section>
             </div>
-          );
+          )
         })}
       </div>
-    );
+    )
   }
 }
 
@@ -95,7 +95,7 @@ CourseList.propTypes = {
       edges: PropTypes.array,
     }),
   }),
-};
+}
 
 export default function CourseList() {
   return (
@@ -139,5 +139,5 @@ export default function CourseList() {
       `}
       render={(data, count) => <CourseListTemplate data={data} count={count} />}
     />
-  );
+  )
 }

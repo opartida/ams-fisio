@@ -1,11 +1,11 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 class Carousel extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   componentDidMount() {}
@@ -16,17 +16,18 @@ class Carousel extends React.Component {
       dots: false,
       infinite: true,
       speed: 1000,
+      autoplaySpeed: 5000,
       slidesToShow: 1,
       slidesToScroll: 1,
-    };
+    }
     return (
       <Slider {...settings}>
-        <div>{this.props.slides[0]}</div>
-        <div>{this.props.slides[1]}</div>
-        <div>{this.props.slides[2]}</div>
+        {this.props.slides.map((slide) => {
+          return <div>{slide}</div>
+        })}
       </Slider>
-    );
+    )
   }
 }
 
-export default Carousel;
+export default Carousel

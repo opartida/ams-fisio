@@ -7,38 +7,48 @@ subheading: Formados y preparados para tratar el dolor complejo y persistente
 mainpitch:
   title: AMS Fisioterapia Suelo Pélvico
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    es una web destinada a pacientes con disfunciones de suelo pélvico y/o problemas de dolor pélvico crónico, así como a fisioterapeutas que quieren formarse en este campo. 20 años de experiencia clínica, 15 años realizando cursos de formación de postgrado en las mejores universidades españolas, la tecnología más avanzada y la constante actualización del equipo de profesionales que dirige el Dr. Antonio Meldaña Sánchez en la evidencia científica publicada son la base de nuestro trabajo.
 description: >-
 carousel: 
-  image: /img/carousel/
+  - image: /img/carousel/curso-hombre.webp
+    title: >
+      Unidad de Dolor Pélvico Crónico
+    subheading: >
+      Formados y preparados para tratar el dolor complejo y persistente
+
+  - image: /img/carousel/formacion.jpg
+    title: >
+       Formación
+    subheading: >
+       Quieres estar actualizado? nosotros lo hacemos por ti
+
+  - image: /img/carousel/unidad-suelo-pelvico.jpg
+    title: >
+       Unidad de suelo pélvico
+    subheading: >
+       Con los últimos avances en conocimientos y tecnología
+
+  - image: /img/carousel/ecografia.webp
+    title: >
+       Ecografia
+    subheading: >
+       El mayor avance de los últimos 20 años para una unidad de suelo pélvico
  
 intro:
   blurbs:    
     - image: /img/cursos_portada/avanzado.png
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
+        Este curso de ecografía está dirigido a aquellos profesionales sanitarios que quieren profundizar en el conocimiento de las posibilidades del uso de la ecografía en el campo de la fisioterapia de suelo pélvico y en su aplicación práctica. Ecografía en el campo del dolor pélvico, en el hombre, el niño/a y la valoración del diafragma toracico, son los ámbitos en los que podrá mejorar su técnica ecográfica.
       url: >
         https://www.fisiocampus.com/cursos-online-fisioterapia/disfunciones-abdomino-perineales-ecodap-teoria-practica-y-aplicaciones-clinicas-avanzado
     - image: /img/cursos_portada/completo.png
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas.
+        Este curso de ecografía está dirigido a aquellos profesionales sanitarios que quieren profundizar en el conocimiento de las posibilidades del uso de la ecografía en el campo de la fisioterapia de suelo pélvico y en su aplicación práctica. Ecografía en el campo del dolor pélvico, en el hombre, el niño/a y la valoración del diafragma toracico, son los ámbitos en los que podrá mejorar su técnica ecográfica.
       url: >
         https://www.fisiocampus.com/cursos-online-fisioterapia/disfunciones-abdomino-perineales-ecodap-teoria-practica-y-aplicaciones-clinicas-completo
     - image: /img/cursos_portada/basico.png
       text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+         Curso de ecografía para quien quiere disponer de una formación práctica en las técnicas básicas de ecografía en el campo de la fisioterapia de suelo pélvico. Te permitirá mejorar de forma exponencial la precisión en la valoración de tus pacientes y te abrirá la posibilidad de realizar tratamientos que sólo la imagen ecográfica puede hacer. Material al que siempre podrás acceder y que te guiará en cualquier exploración funcional ecográfica que habitualmente se realiza en fisioterapia de suelo pélvico.
       url: >
         https://www.fisiocampus.com/cursos-online-fisioterapia/disfunciones-abdomino-perineales-ecodap-teoria-practica-y-aplicaciones-clinicas-basico
   heading: What we offer
