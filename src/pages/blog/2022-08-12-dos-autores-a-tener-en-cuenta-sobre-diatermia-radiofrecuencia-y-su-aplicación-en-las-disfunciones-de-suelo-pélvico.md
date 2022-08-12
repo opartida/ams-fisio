@@ -8,6 +8,8 @@ description: "**Queremos compartir con vosotros 2 fisioterapeutas cuyas líneas
   interés para la práctica clínica diaria**"
 featuredpost: true
 featuredimage: /img/publicacion_autores.png
+tags:
+  - Diatermia
 ---
 **Queremos compartir con vosotros 2 fisioterapeutas cuyas líneas de investigación sobre la diatermia / radiofrecuenciaores resultan de gran interés para la práctica clínica diaria**
 
