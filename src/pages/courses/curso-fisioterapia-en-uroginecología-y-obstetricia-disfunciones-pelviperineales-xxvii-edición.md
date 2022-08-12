@@ -1,7 +1,9 @@
 ---
 templateKey: course-page
-title: "CURSO FISIOTERAPIA EN UROGINECOLOGÍA Y OBSTETRICIA: disfunciones
+longtitle: "CURSO FISIOTERAPIA EN UROGINECOLOGÍA Y OBSTETRICIA: disfunciones
   pelviperineales (XXVII EDICIÓN)"
+title: CURSO FISIOTERAPIA EN UROGINECOLOGÍA Y OBSTETRICIA
+subtitle: disfunciones pelviperineales (XXVII EDICIÓN)
 date: 2022-08-11T06:06:40.305Z
 description: "¡¡Vamos a por la edición nº 27!! Las señas de identidad de este
   curso referencia en España en el campo de la fisioterapia en uroginecología
