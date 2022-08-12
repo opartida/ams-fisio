@@ -1,6 +1,8 @@
 ---
 templateKey: course-page
-title: "CURSO FISIOTERAPIA OBSTÉTRICA: EMBARAZO, PARTO Y POSTPARTO (VII EDICIÓN)"
+longtitle: "CURSO FISIOTERAPIA OBSTÉTRICA: EMBARAZO, PARTO Y POSTPARTO (VII EDICIÓN)"
+title: CURSO FISIOTERAPIA OBSTÉTRICA
+subtitle: EMBARAZO, PARTO Y POSTPARTO (VII EDICIÓN)
 date: 2022-08-11T06:43:29.422Z
 description: "PRÓXIMAMENTE FECHAS PENDIENTES DE CONFIRMACIÓN EN 2021         La
   próxima edición del curso Fisioterapia Obstétrica: Embarazo, Parto y Postparto
