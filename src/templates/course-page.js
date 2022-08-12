@@ -4,15 +4,12 @@ import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
 import Course from "../components/Course";
 import FullWidthImage from "../components/FullWidthImage"; 
 import { getImage } from "gatsby-plugin-image";
 
 // eslint-disable-next-line
 export const CoursePageTemplate = ({
-  content,
-  contentComponent,
   description,
   dates,
   place,
@@ -22,21 +19,17 @@ export const CoursePageTemplate = ({
   featuredimage,
   helmet,
 }) => {
-  const PostContent = contentComponent || Content;
   const courseInfo = { description, dates, place, duration };
   const heroImage = getImage(featuredimage) || featuredimage;
 
   return (
     <>
-      <FullWidthImage img={heroImage} title="" subheading="" />
+      <FullWidthImage img={heroImage} title={title} subheading="" />
       <section className="section">
         {helmet || ""}
         <div className="container content">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-                {title}
-              </h1>
+            <div className="column is-10 is-offset-1">              
               <Course {...courseInfo} />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
@@ -76,7 +69,6 @@ const CoursePage = ({ data }) => {
     <Layout>
       <CoursePageTemplate
         content={post.html}
-        contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Blog">
