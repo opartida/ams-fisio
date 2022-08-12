@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Unidad de Dolor Pélvico Crónico
 image: /img/curso-hombre.webp
 heading: Cursos Online Ecografia
-subheading: Support sustainable farming while enjoying a cup
+subheading: Formados y preparados para tratar el dolor complejo y persistente
 mainpitch:
   title: AMS Fisioterapia Suelo Pélvico
   description: >
@@ -12,6 +12,8 @@ mainpitch:
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
 description: >-
+carousel: 
+  image: /img/carousel/
  
 intro:
   blurbs:    
