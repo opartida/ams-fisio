@@ -1,7 +1,9 @@
 ---
 templateKey: course-page
-title: "CURSO FISIOTERAPIA EN EL SUELO PÉLVICO DEL HOMBRE: Incontinencia
+longtitle: "CURSO FISIOTERAPIA EN EL SUELO PÉLVICO DEL HOMBRE: Incontinencia
   urinaria y disfunciones sexuales IIIª Edición"
+title: CURSO FISIOTERAPIA EN EL SUELO PÉLVICO DEL HOMBRE
+subtitle: Incontinencia urinaria y disfunciones sexuales IIIª Edición
 date: 2022-08-11T06:39:32.930Z
 description: El Dr. Antonio Meldaña Sánchez imparte este curso dirigido a
   aquellos fisioterapeutas que quieran continuar y profundizar en su
