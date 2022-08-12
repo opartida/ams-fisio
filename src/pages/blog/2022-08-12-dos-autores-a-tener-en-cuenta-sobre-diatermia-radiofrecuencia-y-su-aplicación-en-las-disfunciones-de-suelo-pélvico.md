@@ -11,7 +11,7 @@ featuredimage: /img/publicacion_autores.png
 tags:
   - Diatermia
 ---
-**Queremos compartir con vosotros 2 fisioterapeutas cuyas líneas de investigación sobre la diatermia / radiofrecuenciaores resultan de gran interés para la práctica clínica diaria**
+Queremos compartir con vosotros 2 fisioterapeutas cuyas líneas de investigación sobre la diatermia / radiofrecuenciaores resultan de gran interés para la práctica clínica diaria.
 
 Si utilizáis la [diatermia/radiofrecuencia ](https://www.fisioterapiasuelopelvico.com/tecnicas/diatermia-radiofrecuencia#)en vuestra práctica clínica diaria, tenéis interés en incorporar un dispositivo de diatermia en vuestros tratamientos o simplemente queréis conocer más sobre sus aplicaciones os traemos a 2 autores que os recomendamos leer con mucha atención.
 

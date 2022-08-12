@@ -22,7 +22,7 @@ const Tab = (props) => {
 class Tabs extends React.Component {
   render() {
     return (
-      <div className="tabs">
+      <div className="tabs is-boxed">
         <ul>
           {this.props.tabList.map((tab) => (
             <Tab
