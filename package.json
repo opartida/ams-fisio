@@ -27,6 +27,7 @@
     "netlify-cms-media-library-uploadcare": "^0.5.10",
     "prop-types": "^15.6.0",
     "react": "^17.0.0",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^17.0.0",
     "react-helmet": "^6.0.0",
     "react-icons": "^4.4.0",

@@ -1,10 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import { Helmet } from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { kebabCase } from "lodash";
+import { Helmet } from "react-helmet";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
+import Course from "../components/Course";
+import FullWidthImage from "../components/FullWidthImage"; 
+import { getImage } from "gatsby-plugin-image";
 
 // eslint-disable-next-line
 export const CoursePageTemplate = ({
@@ -16,39 +19,44 @@ export const CoursePageTemplate = ({
   duration,
   tags,
   title,
+  featuredimage,
   helmet,
 }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || Content;
+  const courseInfo = { description, dates, place, duration };
+  const heroImage = getImage(featuredimage) || featuredimage;
 
   return (
-    <section className="section">
-      {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+    <>
+      <FullWidthImage img={heroImage} title="" subheading="" />
+      <section className="section">
+        {helmet || ""}
+        <div className="container content">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+                {title}
+              </h1>
+              <Course {...courseInfo} />
+              {tags && tags.length ? (
+                <div style={{ marginTop: `4rem` }}>
+                  <h4>Tags</h4>
+                  <ul className="taglist">
+                    {tags.map((tag) => (
+                      <li key={tag + `tag`}>
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  )
-}
+      </section>
+    </>
+  );
+};
 
 CoursePageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
@@ -58,11 +66,12 @@ CoursePageTemplate.propTypes = {
   place: PropTypes.string,
   dates: PropTypes.string,
   duration: PropTypes.string,
+  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   helmet: PropTypes.object,
-}
+};
 
 const CoursePage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
   return (
     <Layout>
       <CoursePageTemplate
@@ -83,18 +92,19 @@ const CoursePage = ({ data }) => {
         place={post.frontmatter.place}
         dates={post.frontmatter.dates}
         duration={post.frontmatter.duration}
+        featuredimage={post.frontmatter.featuredimage}
       />
     </Layout>
-  )
-}
+  );
+};
 
 CoursePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
-}
+};
 
-export default CoursePage
+export default CoursePage;
 
 export const pageQuery = graphql`
   query CoursePageByID($id: String!) {
@@ -103,6 +113,11 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
+        featuredimage {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED)
+          }
+        }
         title
         description
         place
@@ -112,4 +127,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
