@@ -133,6 +133,7 @@ export const pageQuery = graphql`
               }
             }
             text
+            url
           }
           heading
           description
