@@ -1,5 +1,5 @@
 ---
-templateKey: patients-men-page
+templateKey: article-page
 title: Enfermedad Peyronie / Curvatura Pene / Fibrosis Pene
 date: 2022-08-13T05:36:23.529Z
 description: La enfermedad de Peyronie cursa con la aparición de dolor y la
