@@ -19,6 +19,8 @@ tags:
 place: Pendiente confirmación de fechas 2021.
 dates: Pendiente confirmación de fechas 2021.
 duration: Pendiente confirmación de fechas 2021.
+programa: >
+profesores: >
 informaciongeneral: test
 ---
 PRÓXIMAMENTE FECHAS PENDIENTES DE CONFIRMACIÓN EN 2021

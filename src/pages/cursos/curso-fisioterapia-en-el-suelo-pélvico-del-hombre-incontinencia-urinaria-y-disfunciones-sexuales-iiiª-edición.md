@@ -26,6 +26,11 @@ place: Aulas de Formación Fisiocampus Madrid. Calle San Máximo 31, 4º planta-
   Módulo 5, 28041 Madrid.
 dates: 21, 22 y 23 de octubre de 2022.
 duration: 20 horas (1seminario teórico-práctico).
+programa: >
+  
+profesores: >
+  Dr. Antonio Meldaña Sánchez, fisioterapeuta (PhD): Doctor en fisioterapia y profesor de postgrado en diferentes master de universidades nacionales. Director y fisioterapeuta de la unidad de fisioterapia de suelo pélvico (PELVICUS) del servicio de urología del Hospital San Rafael. 20 años de experiencia en el ámbito de la fisioterapia en uroginecología especializado en el tratamiento del suelo pélvico del hombre, la mujer y los niños. Autor y coautor de numerosas publicaciones en revistas científicas y libros sobre la fisioterapia de suelo pélvico.
+
 informaciongeneral: >
   <ul>
   	<li>ACREDITACIÓN: Solicitada Acreditación a la Comisión de Formación Continuada de las profesiones Sanitarias del Sistema Nacional de Salud. Ediciones anteriores acreditadas con <strong>14,7 créditos</strong>. Créditos oficiales validados en todo el territorio nacional.</li>

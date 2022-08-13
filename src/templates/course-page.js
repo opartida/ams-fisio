@@ -20,6 +20,8 @@ export const CoursePageTemplate = ({
   subtitle,
   featuredimage,
   informaciongeneral,
+  programa,
+  profesores,
   helmet,
 }) => {
   const courseInfo = {
@@ -28,6 +30,8 @@ export const CoursePageTemplate = ({
     place,
     duration,
     informaciongeneral,
+    programa,
+    profesores,
   };
   const heroImage = getImage(featuredimage) || featuredimage
 
@@ -71,6 +75,8 @@ CoursePageTemplate.propTypes = {
   dates: PropTypes.string,
   duration: PropTypes.string,
   informaciongeneral: PropTypes.string,
+  programa: PropTypes.string,
+  profesores: PropTypes.string,
   featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   helmet: PropTypes.object,
 };
@@ -99,6 +105,8 @@ const CoursePage = ({ data }) => {
         duration={post.frontmatter.duration}
         featuredimage={post.frontmatter.featuredimage}
         informaciongeneral={post.frontmatter.informaciongeneral}
+        programa={post.frontmatter.programa}
+        profesores={post.frontmatter.profesores}
       />
     </Layout>
   );
@@ -132,6 +140,8 @@ export const pageQuery = graphql`
         dates
         duration
         informaciongeneral
+        programa
+        profesores
         tags
       }
     }
