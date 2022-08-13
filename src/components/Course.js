@@ -18,12 +18,12 @@ const Course = (courseInfo) => {
     {
       name: "Programa",
       icon: "",
-      content: "Stuff 2",
+      contentfield: "programa",
     },
     {
       name: "Profesores",
       icon: "",
-      content: "Stuff 3",
+      contentfield: "profesores",
     },
     {
       name: "Objetivos",
