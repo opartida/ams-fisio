@@ -1,7 +1,7 @@
 ---
 templateKey: article-page
 title: BICICLETA Y DOLOR PERINEAL
-date: 2022-08-13T10:12:19.385Z
+date: 2022-08-13T10:18:40.828Z
 description: BICICLETA Y DOLOR PERINEAL
 featuredpost: true
 featuredimage: /img/apple-touch-icon.png
