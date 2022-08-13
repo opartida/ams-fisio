@@ -27,30 +27,48 @@ place: Aulas de Formación Fisiocampus Madrid. Calle San Máximo 31, 4º planta-
 dates: 21, 22 y 23 de octubre de 2022.
 duration: 20 horas (1seminario teórico-práctico).
 informaciongeneral: >
-  <p align="center"><span style="font-family:comic sans
-  ms,cursive;"><em><strong><span style="color:#FF8C00;">FISIOTERAPI<span
-  style="font-size:22px;">A</span>SUELOPELVICO.CO<span
-  style="font-size:22px;">M</span></span></strong></em></span></p>
+  <ul>
+  	<li>ACREDITACIÓN: Solicitada Acreditación a la Comisión de Formación Continuada de las profesiones Sanitarias del Sistema Nacional de Salud. Ediciones anteriores acreditadas con <strong>14,7 créditos</strong>. Créditos oficiales validados en todo el territorio nacional.</li>
+  </ul>
 
 
-  <p align="center"><u><strong>CURSO FISIOTERAPIA EN UROGINECOLOGÍA Y OBSTETRICIA: disfunciones pelviperineales (27ª EDICIÓN)</strong></u></p>
+  <ul>
+  	<li>LUGAR DE CELEBRACIÓN:&nbsp;Aulas de Formación Fisiocampus Madrid. Calle San Máximo 31, 4º planta- Módulo 5, 28041 Madrid</li>
+  </ul>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
 
   <p><strong><em><u>DESCRIPCIÓN</u></em></strong></p>
 
 
-  <p>27&nbsp;ediciones y seguimos manteniendo las señas de identidad de esta formación referencia en España en el campo de la fisioterapia en uroginecología: profesorado a la vanguardia en la especialidad de fisioterapia en suelo pélvico con una extensa trayectoria clínica y docente, conocimientos y competencias sobre las distintas disfunciones pelviperineales y su tratamiento en la mujer, un seminario de ecografía funcional abdomino-perineal que integra todos los conocimientos adquiridos y posibilidad de realizar estancias clínicas en unidades especializadas para completar la formación adquirida.&nbsp;</p>
+  <ul>
+  	<li>HORARIOS: 10:00 – 14:30 y 15:30 – 20:30 sábado y 9:00 – 14:30 Domingo.</li>
+  </ul>
 
 
-  <p><strong>NOVEDADES DESDE EDICIÓN XXV</strong></p>
+  <ul>
+  	<li>PRECIO: 975 €&nbsp;&nbsp; 10 % de descuento al matricularse 2 personas juntas <strong>(limitadas a las 3 primeras parejas siempre que se completen las plazas del curso)</strong>.</li>
+  </ul>
 
 
-  <p>-50% de descuento en cualquier bloque de horas de nuestras Estancias clínicas.</p>
+  <ul>
+  	<li>Nº DE PLAZAS: 25&nbsp;(por riguroso orden de matriculación).</li>
+  </ul>
 
 
-  <p>-Ampliación de contenido: Seminario de Diatermia en las disfunciones abdominoperineales de la mujer GRATUITO</p>
+  <ul>
+  	<li>RESERVA DE PLAZAS / MATRICULACIÓN: <a href="http://www.fisioterapiasuelopelvico.com/" style="color: rgb(7, 130, 193);">www.fisioterapiasuelopelvico.com</a> (apartado FORMACIÓN),</li>
+  </ul>
 
 
-  <p>-Ampliación de contenido: Ecografía funcional del suelo pélvico aplicado a la actividad deportiva de la mujer GRATUITO</p>
+  <ul>
+  	<li>INFORMACIÓN: cursos.fisioterapiasuelopelvico@gmail.com</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
 
 
   <p><strong><em><u>INFORMACIÓN GENERAL</u></em></strong></p>
@@ -89,6 +107,9 @@ informaciongeneral: >
   <p style="margin-left:48px;">&nbsp;</p>
 
 
+  <p>&nbsp;</p>
+
+
   <p><strong><em><u>PROFESORES </u></em></strong></p>
 
 
@@ -105,6 +126,9 @@ informaciongeneral: >
 
 
   <p>Dr. Fernando González-Chamorro, urólogo, jefe clínico y profesor asociado de urología y cirugía robótica del Hospital San Rafael de Madrid y la Universidad Francisco de Vitoria en grado de medicina.</p>
+
+
+  <p>&nbsp;</p>
 
 
   <p><strong><em><u>&nbsp;PROGRAMA DEL CURSO </u></em></strong></p>
