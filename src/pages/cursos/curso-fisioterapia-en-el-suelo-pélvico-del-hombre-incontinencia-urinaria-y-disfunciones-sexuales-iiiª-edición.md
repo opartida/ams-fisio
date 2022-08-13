@@ -35,10 +35,6 @@ informaciongeneral: >
 
   <p align="center"><u><strong>CURSO FISIOTERAPIA EN UROGINECOLOGÍA Y OBSTETRICIA: disfunciones pelviperineales (27ª EDICIÓN)</strong></u></p>
 
-
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-
-
   <p><strong><em><u>DESCRIPCIÓN</u></em></strong></p>
 
 
@@ -55,9 +51,6 @@ informaciongeneral: >
 
 
   <p>-Ampliación de contenido: Ecografía funcional del suelo pélvico aplicado a la actividad deportiva de la mujer GRATUITO</p>
-
-
-  <p>&nbsp;</p>
 
 
   <p><strong><em><u>INFORMACIÓN GENERAL</u></em></strong></p>
@@ -96,9 +89,6 @@ informaciongeneral: >
   <p style="margin-left:48px;">&nbsp;</p>
 
 
-  <p>&nbsp;</p>
-
-
   <p><strong><em><u>PROFESORES </u></em></strong></p>
 
 
@@ -115,9 +105,6 @@ informaciongeneral: >
 
 
   <p>Dr. Fernando González-Chamorro, urólogo, jefe clínico y profesor asociado de urología y cirugía robótica del Hospital San Rafael de Madrid y la Universidad Francisco de Vitoria en grado de medicina.</p>
-
-
-  <p>&nbsp;</p>
 
 
   <p><strong><em><u>&nbsp;PROGRAMA DEL CURSO </u></em></strong></p>

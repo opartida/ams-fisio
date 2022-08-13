@@ -1,18 +1,19 @@
 import React from "react";
 import Tabs from "./Tabs";
 import { useState } from "react";
+import Content, { HTMLContent } from "../components/Content";
 
-const Course = ({ informaciongeneral }) => {
+const Course = (courseInfo) => {
   const [activeTab, setActiveTab] = useState("Información general");
 
-  const ActiveTabContent = (props) => <div>{props.content}</div>;
+  const ActiveTabContent = ({content}) => <HTMLContent content={content} />;
 
   // eslint-disable-next-line
   const tabList = [
     {
       name: "Información general",
       icon: "",
-      content: "Stuff 1",
+      contentfield: "informaciongeneral",
     },
     {
       name: "Programa",
@@ -45,7 +46,8 @@ const Course = ({ informaciongeneral }) => {
     const activeIndex = tabList.findIndex((tab) => {
       return tab.name === activeTab;
     });
-    return tabList[activeIndex].content;
+    console.log("entro", courseInfo[tabList[activeIndex].contentfield]);
+    return courseInfo[tabList[activeIndex].contentfield];
   };
 
   return (
@@ -59,7 +61,6 @@ const Course = ({ informaciongeneral }) => {
           />
 
           <ActiveTabContent key={activeTab} content={activeTabContent()} />
-          <div>{informaciongeneral}</div>
         </div>
       </section>
     </div>
