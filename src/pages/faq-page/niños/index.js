@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import Layout from "../../components/Layout";
+import Layout from "../../../components/Layout";
 
 export default class FaqPageIndexPage extends React.Component {
   render() {
@@ -23,7 +23,7 @@ export default class FaqPageIndexPage extends React.Component {
               padding: "0.25em",
             }}
           >
-            Preguntas Frecuentes
+            Preguntas Frecuentes Niños
           </h1>
         </div>
         <section className="section">

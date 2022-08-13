@@ -71,7 +71,7 @@ const Navbar = class extends React.Component {
                 Pacientes
               </Link>
               <div class="navbar-item has-dropdown is-hoverable">
-                <Link class="navbar-link">Pacientes</Link>
+                <div class="navbar-link">Pacientes</div>
 
                 <div class="navbar-dropdown">
                   <Link class="navbar-item" to="/pacientes/hombres">
@@ -99,9 +99,21 @@ const Navbar = class extends React.Component {
                 </div>
               </div>
 
-              <Link className="navbar-item" to="/faq-page">
-                Preguntas Frecuentes
-              </Link>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <div class="navbar-link">Preguntas Frecuentes</div>
+
+                <div class="navbar-dropdown">
+                  <Link class="navbar-item" to="/faq-page/hombres">
+                    Hombres
+                  </Link>
+                  <Link class="navbar-item" to="/faq-page/mujeres">
+                    Mujeres
+                  </Link>
+                  <Link class="navbar-item" to="/faq-page/niños">
+                    Niños
+                  </Link>
+                </div>
+              </div>
               <Link className="navbar-item" to="/blog">
                 Blog
               </Link>
