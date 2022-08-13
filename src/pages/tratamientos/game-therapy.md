@@ -9,6 +9,7 @@ description: Game Therapy es el término por el que se conoce al uso de aparatos
   suelo pélvico.
 featuredpost: true
 featuredimage: /img/apple-touch-icon.png
+tipo: tratamiento
 tags:
   - game
   - therapy
