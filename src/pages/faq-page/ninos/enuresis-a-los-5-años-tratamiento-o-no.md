@@ -5,6 +5,7 @@ date: 2022-08-13T11:31:46.669Z
 description: ENURESIS A LOS 5 AÑOS TRATAMIENTO O NO????
 featuredpost: true
 featuredimage: /img/apple-touch-icon.png
+tipo: faq-niño
 tags:
   - enuresis
   - niños

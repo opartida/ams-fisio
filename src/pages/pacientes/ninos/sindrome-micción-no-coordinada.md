@@ -5,6 +5,7 @@ date: 2022-08-13T11:33:52.000Z
 description: Sindrome micción no coordinada
 featuredpost: true
 featuredimage: /img/apple-touch-icon.png
+tipo: paciente-niño
 tags:
   - sindrome
   - micción
