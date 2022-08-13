@@ -10,6 +10,7 @@ description: >-
 
   A partir de la semana 16 de gestación se recomienda empezar la fisioterapia para preparación al parto. Por otro lado el masaje perineal siempre debe realizarse a partir de la semana 34 así como el entrenamiento de los pujos. La preparación al parto debe realizarse bajo la supervisión de un fisioterapeuta especializado en fisioterapia de suelo pélvico.
 featuredpost: true
+tipo: paciente-mujer
 featuredimage: /img/embarazada.jpeg
 ---
 

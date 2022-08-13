@@ -63,6 +63,7 @@ collections:
     folder: "src/pages/pacientes/hombres"
     create: true
     slug: "{{slug}}"
+    tipo: "pacientes-hombre"
     fields:
       - {
           label: "Template Key",
@@ -83,6 +84,28 @@ collections:
     folder: "src/pages/pacientes/mujeres"
     create: true
     slug: "{{slug}}"
+    tipo: "pacientes-mujer"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "article-page",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list" }
+
+  - name: "tratamientos"
+    label: "Tratamientos"
+    folder: "src/pages/tratamientos"
+    create: true
+    slug: "{{slug}}"
+    tipo: "tratamiento"
     fields:
       - {
           label: "Template Key",
@@ -103,6 +126,7 @@ collections:
     folder: "src/pages/pacientes/niños"
     create: true
     slug: "{{slug}}"
+    tipo: "pacientes-niño"
     fields:
       - {
           label: "Template Key",

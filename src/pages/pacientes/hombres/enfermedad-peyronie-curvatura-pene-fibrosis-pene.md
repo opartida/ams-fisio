@@ -6,6 +6,7 @@ description: La enfermedad de Peyronie cursa con la aparición de dolor y la
   estructuración de una deformidad llegando a dificultar las relaciones sexuales
   e incluso a causar disfunción eréctil.
 featuredpost: true
+tipo: paciente-hombre
 featuredimage: /img/enfermedad_de_peyronie.png
 tags:
   - enfermedad

@@ -3,6 +3,7 @@ templateKey: article-page
 title: Síndrome micción no coordinada
 date: 2022-08-13T07:08:42.661Z
 description: Síndrome micción no coordinada
+tipo:   paciente-hombre
 featuredpost: true
 featuredimage: /img/apple-touch-icon.png
 ---
