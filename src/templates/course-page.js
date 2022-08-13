@@ -19,9 +19,16 @@ export const CoursePageTemplate = ({
   title,
   subtitle,
   featuredimage,
+  informaciongeneral,
   helmet,
 }) => {
-  const courseInfo = { description, dates, place, duration }
+  const courseInfo = {
+    description,
+    dates,
+    place,
+    duration,
+    informaciongeneral,
+  };
   const heroImage = getImage(featuredimage) || featuredimage
 
   return (
@@ -63,9 +70,10 @@ CoursePageTemplate.propTypes = {
   place: PropTypes.string,
   dates: PropTypes.string,
   duration: PropTypes.string,
+  informaciongeneral: PropTypes.string,
   featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   helmet: PropTypes.object,
-}
+};
 
 const CoursePage = ({ data }) => {
   const { markdownRemark: post } = data
@@ -90,9 +98,10 @@ const CoursePage = ({ data }) => {
         dates={post.frontmatter.dates}
         duration={post.frontmatter.duration}
         featuredimage={post.frontmatter.featuredimage}
+        informaciongeneral={post.frontmatter.informaciongeneral}
       />
     </Layout>
-  )
+  );
 }
 
 CoursePage.propTypes = {
@@ -122,8 +131,9 @@ export const pageQuery = graphql`
         place
         dates
         duration
+        informaciongeneral
         tags
       }
     }
   }
-`
+`;

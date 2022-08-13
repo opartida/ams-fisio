@@ -6,6 +6,7 @@
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "bulma": "^0.9.0",
+    "bulma-block-list": "^0.6.0",
     "gatsby": "^4.0.0",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-netlify": "^5.0.0",

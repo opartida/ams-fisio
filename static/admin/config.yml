@@ -57,6 +57,7 @@ collections:
       - { label: "Place", name: "place", widget: "text" }
       - { label: "Dates", name: "dates", widget: "text" }
       - { label: "Duration", name: "duration", widget: "text" }
+      - { label: "InformaciónGeneral", name: "informaciongeneral", widget: "markdown" }
 
   - name: "patients-men"
     label: "Patients Men"

@@ -8,7 +8,7 @@ description: "PRÓXIMAMENTE FECHAS PENDIENTES DE CONFIRMACIÓN EN 2021. La
   próxima edición del curso Fisioterapia Obstétrica: Embarazo, Parto y Postparto
   está pendiente de confirmar sus fechas para 2021. Cuando toda la información
   esté disponible lo comunicaremos en la web y a través de las redes
-  sociales.  "
+  sociales."
 featuredpost: true
 featuredimage: /img/curso-fisioterapia-obstetrica.jpeg
 tags:
@@ -19,6 +19,7 @@ tags:
 place: Pendiente confirmación de fechas 2021.
 dates: Pendiente confirmación de fechas 2021.
 duration: Pendiente confirmación de fechas 2021.
+informaciongeneral: test
 ---
 PRÓXIMAMENTE FECHAS PENDIENTES DE CONFIRMACIÓN EN 2021
 
