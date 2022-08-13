@@ -102,7 +102,7 @@ collections:
     
   - name: "patients-children"
     label: "Patients Children"
-    folder: "src/pages/pacientes/niños"
+    folder: "src/pages/pacientes/ninos"
     create: true
     slug: "{{slug}}"
     tipo: "pacientes-niño"
