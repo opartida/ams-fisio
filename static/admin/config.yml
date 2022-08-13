@@ -58,6 +58,81 @@ collections:
       - { label: "Dates", name: "dates", widget: "text" }
       - { label: "Duration", name: "duration", widget: "text" }
 
+  - name: "patients-men"
+    label: "Patients Men"
+    folder: "src/pages/patients/men"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "patients-men-page",
+        }
+      - { label: "LongTitle", name: "longtitle", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "SubTitle", name: "subtitle", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Place", name: "place", widget: "text" }
+      - { label: "Dates", name: "dates", widget: "text" }
+      - { label: "Duration", name: "duration", widget: "text" }
+  
+    - name: "patients-women"
+      label: "Patients Women"
+      folder: "src/pages/patients/women"
+      create: true
+      slug: "{{slug}}"
+      fields:
+        - {
+            label: "Template Key",
+            name: "templateKey",
+            widget: "hidden",
+            default: "patients-women-page",
+          }
+        - { label: "LongTitle", name: "longtitle", widget: "string" }
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "SubTitle", name: "subtitle", widget: "string" }
+        - { label: "Publish Date", name: "date", widget: "datetime" }
+        - { label: "Description", name: "description", widget: "text" }
+        - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+        - { label: "Featured Image", name: "featuredimage", widget: image }
+        - { label: "Body", name: "body", widget: "markdown" }
+        - { label: "Tags", name: "tags", widget: "list" }
+        - { label: "Place", name: "place", widget: "text" }
+        - { label: "Dates", name: "dates", widget: "text" }
+        - { label: "Duration", name: "duration", widget: "text" }
+    
+    - name: "patients-children"
+      label: "Patients Children"
+      folder: "src/pages/patients/children"
+      create: true
+      slug: "{{slug}}"
+      fields:
+        - {
+            label: "Template Key",
+            name: "templateKey",
+            widget: "hidden",
+            default: "patients-children-page",
+          }
+        - { label: "LongTitle", name: "longtitle", widget: "string" }
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "SubTitle", name: "subtitle", widget: "string" }
+        - { label: "Publish Date", name: "date", widget: "datetime" }
+        - { label: "Description", name: "description", widget: "text" }
+        - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+        - { label: "Featured Image", name: "featuredimage", widget: image }
+        - { label: "Body", name: "body", widget: "markdown" }
+        - { label: "Tags", name: "tags", widget: "list" }
+        - { label: "Place", name: "place", widget: "text" }
+        - { label: "Dates", name: "dates", widget: "text" }
+        - { label: "Duration", name: "duration", widget: "text" }
+
   - name: "pages"
     label: "Pages"
     files:

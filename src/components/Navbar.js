@@ -1,15 +1,15 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import React from "react";
+import { Link } from "gatsby";
+import github from "../img/github-icon.svg";
+import logo from "../img/logo.svg";
 
 const Navbar = class extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: false,
-      navBarActiveClass: '',
-    }
+      navBarActiveClass: "",
+    };
   }
 
   toggleHamburger() {
@@ -23,13 +23,13 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
+              navBarActiveClass: "is-active",
             })
           : this.setState({
-              navBarActiveClass: '',
-            })
+              navBarActiveClass: "",
+            });
       }
-    )
+    );
   }
 
   render() {
@@ -45,7 +45,7 @@ const Navbar = class extends React.Component {
               <img
                 src={logo}
                 alt="Fisioterapia Suelo Pélvico"
-                style={{ width: '88px' }}
+                style={{ width: "88px" }}
               />
             </Link>
             {/* Hamburger menu */}
@@ -70,12 +70,27 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/pacientes">
                 Pacientes
               </Link>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <Link class="navbar-link">Pacientes</Link>
+
+                <div class="navbar-dropdown">
+                  <Link class="navbar-item">Hombres</Link>
+                  <Link class="navbar-item">Mujeres</Link>
+                  <Link class="navbar-item">Niños</Link>
+                </div>
+              </div>
+
               <Link className="navbar-item" to="/tratamientos">
                 Tratamientos
               </Link>
-              <Link className="navbar-item" to="/courses">
-                Formación
-              </Link>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <Link class="navbar-link">Formación</Link>
+
+                <div class="navbar-dropdown">
+                  <Link class="navbar-item" to='/courses'>Cursos</Link>
+                </div>
+              </div>
+
               <Link className="navbar-item" to="/faq">
                 Preguntas Frecuentes
               </Link>
@@ -87,7 +102,7 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <a
+              <Link
                 className="navbar-item"
                 href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
                 target="_blank"
@@ -96,13 +111,13 @@ const Navbar = class extends React.Component {
                 <span className="icon">
                   <img src={github} alt="Github" />
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </nav>
-    )
+    );
   }
-}
+};
 
-export default Navbar
+export default Navbar;
