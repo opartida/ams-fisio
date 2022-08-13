@@ -74,9 +74,15 @@ const Navbar = class extends React.Component {
                 <Link class="navbar-link">Pacientes</Link>
 
                 <div class="navbar-dropdown">
-                  <Link class="navbar-item">Hombres</Link>
-                  <Link class="navbar-item">Mujeres</Link>
-                  <Link class="navbar-item">Niños</Link>
+                  <Link class="navbar-item" to="/pacientes/hombres">
+                    Hombres
+                  </Link>
+                  <Link class="navbar-item" to="/pacientes/mujeres">
+                    Mujeres
+                  </Link>
+                  <Link class="navbar-item" to="/pacientes/niños">
+                    Niños
+                  </Link>
                 </div>
               </div>
 
@@ -87,7 +93,9 @@ const Navbar = class extends React.Component {
                 <Link class="navbar-link">Formación</Link>
 
                 <div class="navbar-dropdown">
-                  <Link class="navbar-item" to='/courses'>Cursos</Link>
+                  <Link class="navbar-item" to="/cursos">
+                    Cursos
+                  </Link>
                 </div>
               </div>
 

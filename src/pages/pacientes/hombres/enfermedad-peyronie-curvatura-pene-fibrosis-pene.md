@@ -13,6 +13,8 @@ tags:
   - fibrosis
   - pene
 ---
+![enfermedad_de_peyronie](/img/enfermedad_de_peyronie.png)
+
 El pene está cubierto de fascias y músculos que participan en el mecanismo de la erección. La fibrosis en una de las fascias que envuelven el pene, la túnica albugínea, o en las estructuras adyacentes puede provocar dolor y deformidad del pene al tener una erección. Hasta el punto de impedir el coito, la penetración, disminuir la longitud del pene y provocar flacidez en la erección o en algunas partes del pene.
 
 **La enfermedad de Peyronie cursa con la aparición de dolor y la estructuración de una deformidad llegando a dificultar las relaciones sexuales e incluso a causar disfunción eréctil.**
