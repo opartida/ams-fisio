@@ -60,7 +60,7 @@ collections:
 
   - name: "patients-men"
     label: "Patients Men"
-    folder: "src/pages/patients/men"
+    folder: "src/pages/pacientes/hombres"
     create: true
     slug: "{{slug}}"
     fields:
@@ -80,7 +80,7 @@ collections:
   
   - name: "patients-women"
     label: "Patients Women"
-    folder: "src/pages/patients/women"
+    folder: "src/pages/pacientes/mujeres"
     create: true
     slug: "{{slug}}"
     fields:
@@ -100,7 +100,7 @@ collections:
     
   - name: "patients-children"
     label: "Patients Children"
-    folder: "src/pages/patients/children"
+    folder: "src/pages/pacientes/niños"
     create: true
     slug: "{{slug}}"
     fields:
