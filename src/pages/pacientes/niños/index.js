@@ -24,7 +24,7 @@ export default class CourseIndexPage extends React.Component {
               padding: "0.25em",
             }}
           >
-            Cursos Propios
+            Pacientes Niños
           </h1>
         </div>
         <section className="section">

@@ -1,9 +1,8 @@
 import * as React from "react";
 
-import Layout from "../../../components/Layout";
-import ArticleList from "../../../components/ArticleList";
+import Layout from "../../components/Layout";
 
-export default class PacientesHombresIndexPage extends React.Component {
+export default class FaqPageIndexPage extends React.Component {
   render() {
     return (
       <Layout>
@@ -24,14 +23,12 @@ export default class PacientesHombresIndexPage extends React.Component {
               padding: "0.25em",
             }}
           >
-            Pacientes Hombres
+            Preguntas Frecuentes
           </h1>
         </div>
         <section className="section">
           <div className="container">
-            <div className="content">
-              <ArticleList templateKey={'kk'}/>
-            </div>
+            <div className="content"></div>
           </div>
         </section>
       </Layout>
