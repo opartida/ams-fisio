@@ -186,7 +186,7 @@ collections:
 
   - name: "faq-children"
     label: "Faq Children"
-    folder: "src/pages/faq-page/niños"
+    folder: "src/pages/faq-page/ninos"
     create: true
     slug: "{{slug}}"
     tipo: "faq-niño"

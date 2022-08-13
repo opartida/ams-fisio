@@ -5,6 +5,7 @@ date: 2022-08-13T11:09:29.594Z
 description: DOLOR CRÓNICO URETRA Y VEJIGA
 featuredpost: true
 featuredimage: /img/apple-touch-icon.png
+tipo: faq-mujer
 tags:
   - dolor
   - uretra

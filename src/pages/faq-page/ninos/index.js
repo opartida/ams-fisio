@@ -27,7 +27,7 @@ class PreguntasFrecuentesNinoIndexPage extends React.Component {
               padding: "0.25em",
             }}
           >
-            Preguntas Frecuentes Mujeres
+            Preguntas Frecuentes Niños
           </h1>
         </div>
         <section className="section">
