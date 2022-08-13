@@ -9,6 +9,9 @@ description: Game Therapy es el término por el que se conoce al uso de aparatos
   suelo pélvico.
 featuredpost: true
 featuredimage: /img/apple-touch-icon.png
+tags:
+  - game
+  - therapy
 ---
 Game Therapy es el término por el que se conoce al uso de aparatos y consolas, como las plataformas Wii de Nintendo o Xbox de Microsoft, de forma adaptada con fines terapéuticos en rehabilitación. Aunque estos sistemas son conocidos sobretodo para el ámbito del ocio, su incorporación como complemento en rehabilitación de distintas patologías ha ido ganando importancia en los últimos años, principalmente en el campo de la fisioterapia neurológica en el tratamiento de pacientes con lesiones medulares.
 
