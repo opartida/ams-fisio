@@ -165,7 +165,7 @@ collections:
   
   - name: "faq-women"
     label: "Faq Women"
-    folder: "src/pages/pacientes/mujeres"
+    folder: "src/pages/faq/mujeres"
     create: true
     slug: "{{slug}}"
     tipo: "faq-mujer"
@@ -186,7 +186,7 @@ collections:
 
   - name: "faq-children"
     label: "Faq Children"
-    folder: "src/pages/pacientes/niños"
+    folder: "src/pages/faq/niños"
     create: true
     slug: "{{slug}}"
     tipo: "faq-niño"

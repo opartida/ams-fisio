@@ -4,7 +4,7 @@ import ArticleList from "../../../components/ArticleList";
 import PropTypes from "prop-types";
 import { graphql, StaticQuery } from "gatsby";
 
-class PreguntasFrecuentesIndexPage extends React.Component {
+class PreguntasFrecuentesHombresIndexPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
@@ -42,7 +42,7 @@ class PreguntasFrecuentesIndexPage extends React.Component {
   }
 }
 
-PreguntasFrecuentes.propTypes = {
+PreguntasFrecuentesHombres.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -50,17 +50,17 @@ PreguntasFrecuentes.propTypes = {
   }),
 };
 
-export default function PreguntasFrecuentes() {
+export default function PreguntasFrecuentesHombres() {
   return (
     <StaticQuery
       query={graphql`
-        query PreguntasFrecuentesQuery {
+        query PreguntasFrecuentesHombresQuery {
           allMarkdownRemark(
             sort: { order: ASC, fields: [frontmatter___date] }
             filter: {
               frontmatter: {
                 templateKey: { eq: "article-page" }
-                tipo: { eq: "faq" }
+                tipo: { eq: "faq-hombre" }
               }
             }
           ) {
@@ -93,7 +93,7 @@ export default function PreguntasFrecuentes() {
         }
       `}
       render={(data, count) => (
-        <PreguntasFrecuentesIndexPage data={data} count={count} />
+        <PreguntasFrecuentesHombresIndexPage data={data} count={count} />
       )}
     />
   );
