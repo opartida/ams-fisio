@@ -35,7 +35,7 @@ collections:
 
   - name: "courses"
     label: "Courses"
-    folder: "src/pages/courses"
+    folder: "src/pages/cursos"
     create: true
     slug: "{{slug}}"
     fields:
