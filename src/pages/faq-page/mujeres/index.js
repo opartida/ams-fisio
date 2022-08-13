@@ -60,7 +60,7 @@ export default function PreguntasFrecuentesMujer() {
             filter: {
               frontmatter: {
                 templateKey: { eq: "article-page" }
-                tipo: { eq: "faq-mujer" }
+                tipo: { eq: "faq-niño" }
               }
             }
           ) {
