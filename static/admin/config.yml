@@ -58,7 +58,7 @@ collections:
       - { label: "Dates", name: "dates", widget: "text" }
       - { label: "Duration", name: "duration", widget: "text" }
 
-  - name: "patients_men"
+  - name: "patientsmen"
     label: "Patients Men"
     folder: "src/pages/patients/men"
     create: true
@@ -83,7 +83,7 @@ collections:
       - { label: "Dates", name: "dates", widget: "text" }
       - { label: "Duration", name: "duration", widget: "text" }
   
-    - name: "patients_women"
+    - name: "patientswomen"
       label: "Patients Women"
       folder: "src/pages/patients/women"
       create: true
@@ -108,7 +108,7 @@ collections:
         - { label: "Dates", name: "dates", widget: "text" }
         - { label: "Duration", name: "duration", widget: "text" }
     
-    - name: "patients_children"
+    - name: "patientschildren"
       label: "Patients Children"
       folder: "src/pages/patients/children"
       create: true
