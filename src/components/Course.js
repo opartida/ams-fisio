@@ -2,6 +2,7 @@ import React from "react";
 import Tabs from "./Tabs";
 import { useState } from "react";
 import Content, { HTMLContent } from "../components/Content";
+import Collapsibles from "./Collapsibles";
 
 const Course = (courseInfo) => {
   const [activeTab, setActiveTab] = useState("Información general");
@@ -46,7 +47,6 @@ const Course = (courseInfo) => {
     const activeIndex = tabList.findIndex((tab) => {
       return tab.name === activeTab;
     });
-    console.log("entro", courseInfo[tabList[activeIndex].contentfield]);
     return courseInfo[tabList[activeIndex].contentfield];
   };
 
@@ -54,13 +54,18 @@ const Course = (courseInfo) => {
     <div className="content">
       <section className="section">
         <div className="container">
-          <Tabs
-            tabList={tabList}
-            activeTab={activeTab}
-            changeActiveTab={(tab) => setActiveTab(tab)}
-          />
+          <div className="is-hidden-mobile">
+            <Tabs
+              tabList={tabList}
+              activeTab={activeTab}
+              changeActiveTab={(tab) => setActiveTab(tab)}
+            />
 
-          <ActiveTabContent key={activeTab} content={activeTabContent()} />
+            <ActiveTabContent key={activeTab} content={activeTabContent()} />
+          </div>
+          <div className="is-hidden-desktop">
+            <Collapsibles/>
+          </div>
         </div>
       </section>
     </div>
