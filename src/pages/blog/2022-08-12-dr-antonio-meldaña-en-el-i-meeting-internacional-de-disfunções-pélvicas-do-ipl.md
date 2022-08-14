@@ -2,8 +2,7 @@
 templateKey: blog-post
 title: Dr Antonio Meldaña En El I Meeting Internacional De Disfunções Pélvicas Do IPL
 date: 2022-08-12T06:35:40.120Z
-description: "**Transperineal ultrasound: levator ani muscle dysfunction in
-  postpartum women**"
+description: "Transperineal ultrasound: levator ani muscle dysfunction in postpartum women"
 featuredpost: true
 featuredimage: /img/evento_lordelo.jpeg
 tags:
