@@ -1,8 +1,8 @@
 import React from "react";
 import Tabs from "./Tabs";
 import { useState } from "react";
-import Content, { HTMLContent } from "../components/Content";
-import Collapsibles from "./Collapsibles";
+import { HTMLContent } from "../components/Content";
+import Collapsible from "react-collapsible";
 
 const Course = (courseInfo) => {
   const [activeTab, setActiveTab] = useState("Información general");
@@ -43,6 +43,8 @@ const Course = (courseInfo) => {
     },
   ];
 
+ 
+
   const activeTabContent = () => {
     const activeIndex = tabList.findIndex((tab) => {
       return tab.name === activeTab;
@@ -64,7 +66,11 @@ const Course = (courseInfo) => {
             <ActiveTabContent key={activeTab} content={activeTabContent()} />
           </div>
           <div className="is-hidden-desktop">
-            <Collapsibles/>
+            {tabList.map((tab) => (
+              <Collapsible trigger={tab.name}>
+                <HTMLContent content={courseInfo[tab.contentfield]} />
+              </Collapsible>
+            ))}
           </div>
         </div>
       </section>

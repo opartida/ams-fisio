@@ -39,6 +39,8 @@ const TemplateWrapper = ({ children }) => {
           color="#ff4400"
         />
 
+        <link rel="stylesheet" href="/style.css"></link>
+
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
