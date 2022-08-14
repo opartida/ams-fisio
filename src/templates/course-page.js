@@ -32,6 +32,7 @@ export const CoursePageTemplate = ({
     informaciongeneral,
     programa,
     profesores,
+    objetivos,
   };
   const heroImage = getImage(featuredimage) || featuredimage
 
@@ -77,6 +78,7 @@ CoursePageTemplate.propTypes = {
   informaciongeneral: PropTypes.string,
   programa: PropTypes.string,
   profesores: PropTypes.string,
+  objetivos: PropTypes.string,
   featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   helmet: PropTypes.object,
 };
@@ -107,6 +109,7 @@ const CoursePage = ({ data }) => {
         informaciongeneral={post.frontmatter.informaciongeneral}
         programa={post.frontmatter.programa}
         profesores={post.frontmatter.profesores}
+        objetivos={post.frontmatter.objetivos}
       />
     </Layout>
   );
@@ -142,6 +145,7 @@ export const pageQuery = graphql`
         informaciongeneral
         programa
         profesores
+        objetivos
         tags
       }
     }

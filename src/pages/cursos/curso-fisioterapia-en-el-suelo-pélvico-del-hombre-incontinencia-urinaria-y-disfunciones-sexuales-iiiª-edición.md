@@ -18,7 +18,7 @@ description: El Dr. Antonio Meldaña Sánchez imparte este curso dirigido a
   para su abordaje, siempre desde el enfoque de la fisioterapia basada en la
   evidencia y en nuestra experiencia clínica.
 featuredpost: true
-featuredimage: /img/curso-fisioterapia-suelo-pelvico.jpg
+featuredimage: /img/curso-hombre.jpg
 tags:
   - fisioterapia
   - suelo pelvico

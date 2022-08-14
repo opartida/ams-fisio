@@ -30,7 +30,7 @@ const Course = (courseInfo) => {
     {
       name: "Objetivos",
       icon: "",
-      content: "Stuff 4",
+      content: "objetivos",
     },
     {
       name: "Metodología docente",

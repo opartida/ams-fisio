@@ -59,6 +59,7 @@ collections:
       - { label: "Duration", name: "duration", widget: "text" }
       - { label: "Información General", name: "informaciongeneral", widget: "markdown" }
       - { label: "Programa", name: "programa", widget: "markdown" }
+      - { label: "Objetivos", name: "objetivos", widget: "markdown" }
 
   - name: "patients-men"
     label: "Patients Men"
