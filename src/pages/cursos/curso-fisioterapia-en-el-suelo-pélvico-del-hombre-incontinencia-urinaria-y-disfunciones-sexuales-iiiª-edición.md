@@ -26,6 +26,7 @@ place: Aulas de Formación Fisiocampus Madrid. Calle San Máximo 31, 4º planta-
   Módulo 5, 28041 Madrid.
 dates: 21, 22 y 23 de octubre de 2022.
 duration: 20 horas (1seminario teórico-práctico).
+objetivos: >
 informaciongeneral: >
   <ul>
   	<li>ACREDITACIÓN: Solicitada Acreditación a la Comisión de Formación Continuada de las profesiones Sanitarias del Sistema Nacional de Salud. Ediciones anteriores acreditadas con 3,3&nbsp;créditos. Créditos validados en todo el territorio nacional.</li>
