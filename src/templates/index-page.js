@@ -35,7 +35,12 @@ export const IndexPageTemplate = ({
   }
   return (
     <div>
-      <Carousel slides={getSlides(carousel)} />
+      <div className='is-hidden-desktop'>
+        <FullWidthImage img={heroImage}/>
+      </div>
+      <div className="is-hidden-mobile">
+        <Carousel slides={getSlides(carousel)} />
+      </div>
       <section className="section section--gradient">
         <div className="container">
           <div className="section">

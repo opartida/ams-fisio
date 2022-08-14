@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Unidad de Dolor Pélvico Crónico
-image: /img/curso-hombre.webp
+image: /img/antonio-meldana-sanchez.jpeg
 heading: Cursos Online Ecografia
 subheading: Formados y preparados para tratar el dolor complejo y persistente
 mainpitch:
