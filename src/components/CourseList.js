@@ -75,7 +75,7 @@ class CourseListTemplate extends React.Component {
                   </Link>
                   <Link
                     className="button is-primary"
-                    to={item.node.fields.slug}
+                    to="/inscripcion-curso"
                   >
                     Inscríbete
                   </Link>
