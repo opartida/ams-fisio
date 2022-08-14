@@ -22,6 +22,7 @@ export const CoursePageTemplate = ({
   informaciongeneral,
   programa,
   profesores,
+  objetivos,
   helmet,
 }) => {
   const courseInfo = {
