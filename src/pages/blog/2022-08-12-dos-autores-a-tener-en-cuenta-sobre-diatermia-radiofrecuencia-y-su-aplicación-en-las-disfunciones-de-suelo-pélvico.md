@@ -3,9 +3,9 @@ templateKey: blog-post
 title: Dos autores a tener en cuenta sobre diatermia / radiofrecuencia y su
   aplicación en las disfunciones de suelo pélvico
 date: 2022-08-12T06:25:40.053Z
-description: "**Queremos compartir con vosotros 2 fisioterapeutas cuyas líneas
-  de investigación sobre la diatermia / radiofrecuenciaores resultan de gran
-  interés para la práctica clínica diaria**"
+description: Queremos compartir con vosotros 2 fisioterapeutas cuyas líneas de
+  investigación sobre la diatermia / radiofrecuenciaores resultan de gran
+  interés para la práctica clínica diaria
 featuredpost: true
 featuredimage: /img/publicacion_autores.png
 tags:
