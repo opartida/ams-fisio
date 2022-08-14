@@ -3,12 +3,15 @@ import Tabs from "./Tabs";
 import { useState } from "react";
 import { HTMLContent } from "../components/Content";
 import Collapsible from "react-collapsible";
-import '../styles/index.css';
+import "../styles/index.css";
+import { getImage } from "gatsby-plugin-image";
+import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
 const Course = (courseInfo) => {
   const [activeTab, setActiveTab] = useState("Información general");
-
-  const ActiveTabContent = ({content}) => <HTMLContent content={content} />;
+  const heroImage = getImage(courseInfo.featuredimage) || courseInfo.featuredimage;
+  const ActiveTabContent = ({ content }) => <HTMLContent content={content} />;
+  console.log(heroImage)
 
   // eslint-disable-next-line
   const tabList = [
@@ -44,8 +47,6 @@ const Course = (courseInfo) => {
     },
   ];
 
- 
-
   const activeTabContent = () => {
     const activeIndex = tabList.findIndex((tab) => {
       return tab.name === activeTab;
@@ -57,6 +58,9 @@ const Course = (courseInfo) => {
     <div className="content">
       <section className="section">
         <div className="container">
+          <PreviewCompatibleImage
+            imageInfo={courseInfo.featuredimage}
+          />
           <div className="is-hidden-mobile">
             <Tabs
               tabList={tabList}

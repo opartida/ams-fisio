@@ -26,6 +26,7 @@ export const CoursePageTemplate = ({
   helmet,
 }) => {
   const courseInfo = {
+    featuredimage,
     description,
     dates,
     place,
@@ -39,7 +40,7 @@ export const CoursePageTemplate = ({
 
   return (
     <>
-      <FullWidthImage img={heroImage} title={title} subheading={subtitle} />
+      
       <section className="section">
         {helmet || ''}
         <div className="container content">

@@ -15,7 +15,7 @@ description: "¡¡Vamos a por la edición nº 27!! Las señas de identidad de es
   de realizar estancias clínicas en unidades especializadas para completar la
   formación adquirida."
 featuredpost: true
-featuredimage: /img/curso-uroginecologia-obstetricia.jpg
+featuredimage: /img/curso-fisioterapia-uroginecologia-obstetricia.png
 tags:
   - fisioterapia
   - uroginecología
