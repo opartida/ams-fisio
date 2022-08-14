@@ -2,9 +2,7 @@ import React from "react";
 import bulmaCollapsible from "@creativebulma/bulma-collapsible";
 class Collapsibles extends React.Component {
   componentDidMount() {
-    this.collapsibles = bulmaCollapsible.attach(".is-collapsible", {
-      container: this.refs.collapsibles,
-    });
+    this.collapsibles = bulmaCollapsible.attach(".is-collapsible");
   }
 
   render() {
