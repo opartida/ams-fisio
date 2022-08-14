@@ -7,6 +7,7 @@ description: La episiotomía es un corte cuya cicatriz resultante puede ser caus
   función de los tejidos. La fisioterapia dispone de técnicas de utilidad
   probada para su óptimo tratamiento tales como la terapia manual, los
   ultrasonidos o la diatermia.
+tipo: paciente-mujer
 featuredpost: true
 featuredimage: /img/embarazada.jpeg
 tags:
