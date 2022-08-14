@@ -3,6 +3,7 @@ import Tabs from "./Tabs";
 import { useState } from "react";
 import { HTMLContent } from "../components/Content";
 import Collapsible from "react-collapsible";
+import '../styles/index.css';
 
 const Course = (courseInfo) => {
   const [activeTab, setActiveTab] = useState("Información general");
