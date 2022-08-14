@@ -7,6 +7,7 @@ description: El porcentaje de hombres operados de próstata que sufren este
   normal en las 4 primeras semanas y también la recuperación progresiva de la
   misma.
 featuredpost: true
+tipo: paciente-hombre
 featuredimage: /img/curso-hombre.jpg
 tags:
   - incontinencia
