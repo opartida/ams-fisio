@@ -64,7 +64,7 @@ collections:
       - { label: "Certificado", name: "certificado", widget: "markdown" }
 
   - name: "patients-men"
-    label: "Patients Men"
+    label: "Pacientes Hombres"
     folder: "src/pages/pacientes/hombres"
     create: true
     slug: "{{slug}}"
@@ -86,7 +86,7 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
   
   - name: "patients-women"
-    label: "Patients Women"
+    label: "Pacientes Mujeres"
     folder: "src/pages/pacientes/mujeres"
     create: true
     slug: "{{slug}}"
@@ -108,7 +108,7 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
     
   - name: "patients-children"
-    label: "Patients Children"
+    label: "Pacientes Niños"
     folder: "src/pages/pacientes/ninos"
     create: true
     slug: "{{slug}}"
@@ -152,7 +152,7 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "faq-men"
-    label: "Faq Men"
+    label: "Faq Hombres"
     folder: "src/pages/faq-page/hombres"
     create: true
     slug: "{{slug}}"
@@ -173,7 +173,7 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
   
   - name: "faq-women"
-    label: "Faq Women"
+    label: "Faq Mujeres"
     folder: "src/pages/faq-page/mujeres"
     create: true
     slug: "{{slug}}"
@@ -194,7 +194,7 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "faq-children"
-    label: "Faq Children"
+    label: "Faq Niños"
     folder: "src/pages/faq-page/ninos"
     create: true
     slug: "{{slug}}"
@@ -216,6 +216,7 @@ collections:
 
       
   - name: "pages"
+
     label: "Pages"
     files:
       - file: "src/pages/index.md"
@@ -315,3 +316,19 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }   
+
+  - name: "profesores"
+    label: "Profesores"
+    folder: "src/pages/profesores"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "profesores-page",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
