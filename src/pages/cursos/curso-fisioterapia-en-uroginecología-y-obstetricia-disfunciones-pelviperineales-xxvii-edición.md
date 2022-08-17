@@ -74,43 +74,37 @@ informaciongeneral: >
   </ul>
 
 
-  <p><em><strong>NOVEDADES IMPLEMENTADAS DESDE LA EDICIÓN XXV</strong></em><br />
+  <div class="">NOVEDADES IMPLEMENTADAS DESDE LA EDICIÓN XXV</strong></div>
 
-  -50% de descuento en cualquier bloque de horas de nuestras Estancias clínicas.<br />
+  <div class="list">
+    <ul>
+      <div class="list-item">
+        <li>50% de descuento en cualquier bloque de horas de nuestras Estancias clínicas.</li>
+        <li>Ampliación de contenido: Seminario de Diatermia en las disfunciones abdominoperineales de la mujer GRATUITO</li>
+        <li>Ampliación de contenido: Ecografía funcional del suelo pélvico aplicado a la actividad deportiva de la mujer GRATUITO</li>
+      </div>
+    </ul>
+  </div>
 
-  -Ampliación de contenido: Seminario de Diatermia en las disfunciones abdominoperineales de la mujer GRATUITO<br />
-
-  -Ampliación de contenido: Ecografía funcional del suelo pélvico aplicado a la actividad deportiva de la mujer GRATUITO</p>
 profesores: ""
 programa: >+
-  <p>MORFOFISIOLOGÍA Y FISIOPATOLOGÍA PELVIPERINEAL:</p>
+ 
 
-
-  <p>&nbsp;</p>
-
-
-  <p>§&nbsp; Estudio del continente pélvico.</p>
-
-
-  <p>§&nbsp; Estudio del contenido pélvico.&nbsp;</p>
-
-
-  <p>§&nbsp; Sesión práctica: Identificación de estructuras anatómicas pelviperineales sobre modelos anatómicos.&nbsp;</p>
-
-
-  <p>§&nbsp; Control neurológico de la micción.&nbsp;</p>
-
-
-  <p>§&nbsp; Taller práctico de Control Neurológico de la micción y vejiga neurógena.</p>
-
-
-  <p>§&nbsp; Alteración de la estática pélvica: Factores de riesgo pelviperineal.&nbsp;</p>
-
-
-  <p>§&nbsp; Fisiopatología del tracto urinario inferior.</p>
-
-
-  <p>§&nbsp; Consecuencias perineoesfinterianas del embarazo, el parto y la edad.</p>
+  <div>
+    <div>
+      MORFOFISIOLOGÍA Y FISIOPATOLOGÍA PELVIPERINEAL:
+    </div>
+    <ul>
+      <li>Estudio del continente pélvico.</li>
+      <li>Estudio del contenido pélvico.</li>
+      <li>Sesión práctica: Identificación de estructuras anatómicas pelviperineales sobre modelos anatómicos.</li>
+      <li>Control neurológico de la micción.</li>
+      <li>Taller práctico de Control Neurológico de la micción y vejiga neurógena.</li>
+      <li>Alteración de la estática pélvica: Factores de riesgo pelviperineal.</li>
+      <li>Fisiopatología del tracto urinario inferior.</li>
+      <li>Consecuencias perineoesfinterianas del embarazo, el parto y la edad.</li>
+    </ul>
+  </div>
 
 
   <p>&nbsp;</p>
@@ -141,6 +135,7 @@ programa: >+
 
 
   <p>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TRATAMIENTO / REEDUCACIÓN ABDOMINO-PERINEAL I:</p>
+  <p>&nbsp;</p>
 
 
   <p>§&nbsp; Objetivos de la reeducación abdomino-pelvi-perineal.</p>
