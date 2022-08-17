@@ -25,9 +25,6 @@ place: Aulas de Formación Fisiocampus Madrid. Calle San Máximo 31, 4º planta-
 dates: 1 y 2 de octubre, 22 y 23 de octubre 5 y 6 de noviembre, 19 y 20
   noviembre, 17 y 18 de diciembre de 2022
 duration: 75 horas (5 seminarios teórico-prácticos).
-objetivos: >
-metodologiadocente: >
-certificado: >
 informaciongeneral: >
   <ul>
   	<li>ACREDITACIÓN: Solicitada Acreditación a la Comisión de Formación Continuada de las profesiones Sanitarias del Sistema Nacional de Salud. Ediciones anteriores acreditadas con <strong>14,7 créditos</strong>. Créditos oficiales validados en todo el territorio nacional.</li>
@@ -81,8 +78,7 @@ informaciongeneral: >
   -Ampliación de contenido: Seminario de Diatermia en las disfunciones abdominoperineales de la mujer GRATUITO<br />
 
   -Ampliación de contenido: Ecografía funcional del suelo pélvico aplicado a la actividad deportiva de la mujer GRATUITO</p>
-profesores: ""
-programa: >+
+programa: >
   <p>MORFOFISIOLOGÍA Y FISIOPATOLOGÍA PELVIPERINEAL:</p>
 
 
@@ -287,5 +283,57 @@ programa: >+
 
 
   <p>-Vaginismo/dispareunia</p>
+objetivos: >
+  <p>Ø&nbsp; Dirigido a fisioterapeutas que quieren obtener o ampliar una
+  formación de base consistente, que les permita abordar de manera eficaz al
+  enorme número de pacientes derivados de los campos de la urología, ginecología
+  y obstetricia que pueden beneficiarse de los tratamientos conservadores:</p>
+
+
+  <p>§&nbsp; Conocimiento de la anatomía, fisiología, y fisiopatología de la zona urogenital y abdomino-pelvi-perineal.</p>
+
+
+  <p>§&nbsp; Conocimiento de las pruebas complementarias y tratamientos médicos relacionados que aportan datos imprescindibles para la valoración y tratamientos de fisioterapia junto con la importancia del trabajo en equipo con los diferentes especialistas: urólogos, ginecólogos, obstetras, matronas, etc.</p>
+
+
+  <p>§&nbsp; Capacitación para realizar una valoración funcional completa de un paciente diagnosticado de: incontinencia urinaria de esfuerzo, de urgencia, mixta, prolapsos genitales, etc. y para evaluar la indicación o no del tratamiento de fisioterapia.</p>
+
+
+  <p>§&nbsp; Conocimiento y manejo de las principales técnicas de fisioterapia en este campo: biofeedback, electroterapia, técnicas manuales, técnicas locales o globales, terapia comportamental, etc.</p>
+
+
+  <p>§&nbsp; Capacitación para elaborar, aplicar y evaluar un plan de tratamiento de carácter preventivo, terapéutico o complementario en base a la fisioterapia basada en la evidencia.</p>
+metodologiadocente: >
+  <p>-&nbsp;El curso se desarrolla en 30 horas teóricas y 45 horas de prácticas
+  aproximadamente.</p>
+
+
+  <p>- Posibilidad de ampliar 3h más con formación en diatermia en suelo pélvico.</p>
+
+
+  <p><br />
+
+  - El curso sigue una dinámica de clases teóricas, con soporte de presentaciones mediante diapositivas en formato power point, entrega de material docente que incluye grabación del curso, maquetas anatómicas, etc. alternando las prácticas correspondientes a cada tema.&nbsp;</p>
+
+
+  <ul>
+  	<li>El aula de formación tiene 140m2 y ventilación directa, por lo que se cumplirán de forma más que suficiente las normas Covid de distancia entre alumnos. El aula está digitalizada con diferentes cámaras lo que permite la grabación tanto de la parte teórica cómo práctica, manteniendo la privacidad de los alumnos, permitiendo la asistencia a la formación de forma online si fuese necesario y pudiendo entregar a final de la formación el curso en formato vídeo para su posterior repaso.</li>
+  </ul>
+
+
+  <p><br />
+
+  - Las prácticas, como en cualquier curso de fisioterapia se realizan entre los alumnos/as en grupos de 2/4 personas, sabiendo los alumnos que la zona anatómica objeto de valoración es, en algunas partes del curso, la urogenital.</p>
+
+
+  <p><br />
+
+  - Posibilidad de realizar estancias Clínicas en Unidades Especializadas para completar su formación.</p>
+certificado: >
+  <p>Los cursos serán acreditados oficialmente con validez de los créditos en
+  todo el territorio nacional.&nbsp; La obtención de los créditos está
+  supeditada a la asistencia del 90% de las horas totales del curso (consultar
+  excepciones con la organización).</p>
+profesores: ""
 ---
 ¡¡Vamos a por la edición nº 27!! Las señas de identidad de este curso referencia en España en el campo de la fisioterapia en uroginecología siguen intactas: profesorado a la vanguardia en la especialidad de fisioterapia en suelo pélvico con una extensa trayectoria clínica y docente, conocimientos y competencias sobre las distintas disfunciones pelviperineales y su tratamiento en la mujer, un seminario de ecografía funcional abdomino-perineal que integra todos los conocimientos adquiridos y posibilidad de realizar estancias clínicas en unidades especializadas para completar la formación adquirida.
