@@ -23,6 +23,8 @@ export const CoursePageTemplate = ({
   programa,
   profesores,
   objetivos,
+  metodologiadocente,
+  certificado,
   helmet,
 }) => {
   const courseInfo = {
@@ -35,14 +37,15 @@ export const CoursePageTemplate = ({
     programa,
     profesores,
     objetivos,
+    metodologiadocente,
+    certificado,
   };
-  const heroImage = getImage(featuredimage) || featuredimage
+  const heroImage = getImage(featuredimage) || featuredimage;
 
   return (
     <>
-      
       <section className="section">
-        {helmet || ''}
+        {helmet || ""}
         <div className="container content">
           <div className="columns">
             <div className="column is-10 is-offset-1">
@@ -64,8 +67,8 @@ export const CoursePageTemplate = ({
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
 CoursePageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
@@ -81,6 +84,8 @@ CoursePageTemplate.propTypes = {
   programa: PropTypes.string,
   profesores: PropTypes.string,
   objetivos: PropTypes.string,
+  metodologiadocente: PropTypes.string,
+  certificado: PropTypes.string,
   featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   helmet: PropTypes.object,
 };
@@ -112,6 +117,8 @@ const CoursePage = ({ data }) => {
         programa={post.frontmatter.programa}
         profesores={post.frontmatter.profesores}
         objetivos={post.frontmatter.objetivos}
+        metodologiadocente={post.frontmatter.metodologiadocente}
+        certificado={post.frontmatter.certificado}
       />
     </Layout>
   );
@@ -148,6 +155,8 @@ export const pageQuery = graphql`
         programa
         profesores
         objetivos
+        metodologiadocente
+        certificado
         tags
       }
     }

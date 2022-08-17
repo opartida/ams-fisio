@@ -26,6 +26,8 @@ dates: 1 y 2 de octubre, 22 y 23 de octubre 5 y 6 de noviembre, 19 y 20
   noviembre, 17 y 18 de diciembre de 2022
 duration: 75 horas (5 seminarios teórico-prácticos).
 objetivos: >
+metodologiadocente: >
+certificado: >
 informaciongeneral: >
   <ul>
   	<li>ACREDITACIÓN: Solicitada Acreditación a la Comisión de Formación Continuada de las profesiones Sanitarias del Sistema Nacional de Salud. Ediciones anteriores acreditadas con <strong>14,7 créditos</strong>. Créditos oficiales validados en todo el territorio nacional.</li>

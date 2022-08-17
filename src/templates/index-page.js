@@ -8,6 +8,7 @@ import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import FullWidthImage from '../components/FullWidthImage'
 import Carousel from '../components/Carousel'
+import { CookieConsent, OPTIONS } from "react-cookie-consent";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -34,57 +35,69 @@ export const IndexPageTemplate = ({
     })
   }
   return (
-    <div>
-      <div className='is-hidden-desktop'>
-        <FullWidthImage img={heroImage}/>
-      </div>
-      <div className="is-hidden-mobile">
-        <Carousel slides={getSlides(carousel)} />
-      </div>
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <div className="content">
+    <>
+      <div>
+        <div className="is-hidden-desktop">
+          <FullWidthImage img={heroImage} />
+        </div>
+        <div className="is-hidden-mobile">
+          <Carousel slides={getSlides(carousel)} />
+        </div>
+        <section className="section section--gradient">
+          <div className="container">
+            <div className="section">
+              <div className="columns">
+                <div className="column is-10 is-offset-1">
                   <div className="content">
-                    <div className="tile">
-                      <h1 className="title">
-                        <span className=" is-primary">{mainpitch.title}</span>
-                      </h1>
+                    <div className="content">
+                      <div className="tile">
+                        <h1 className="title">
+                          <span className=" is-primary">{mainpitch.title}</span>
+                        </h1>
+                      </div>
+                      <div className="tile">
+                        <h3 className="subtitle">{mainpitch.description}</h3>
+                      </div>
                     </div>
-                    <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
+                    <div className="columns">
+                      <div className="column is-12">
+                        <h3 className="has-text-weight-semibold is-size-2">
+                          {heading}
+                        </h3>
+                        <p>{description}</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="columns">
+                    <Features gridItems={intro.blurbs} />
+
                     <div className="column is-12">
                       <h3 className="has-text-weight-semibold is-size-2">
-                        {heading}
+                        Últimos posts
                       </h3>
-                      <p>{description}</p>
-                    </div>
-                  </div>
-                  <Features gridItems={intro.blurbs} />
-
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      Últimos posts
-                    </h3>
-                    <BlogRoll />
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/blog">
-                        Leer más
-                      </Link>
+                      <BlogRoll />
+                      <div className="column is-12 has-text-centered">
+                        <Link className="btn" to="/blog">
+                          Leer más
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+      <div>
+        <CookieConsent
+          location="bottom"
+          cookieName="cookiedisclaimer"
+          expires={999}
+          overlay
+        >
+          Este sitio usa cookies para mejorar la experiencia de usuario.
+        </CookieConsent>
+      </div>
+    </>
   );
 }
 

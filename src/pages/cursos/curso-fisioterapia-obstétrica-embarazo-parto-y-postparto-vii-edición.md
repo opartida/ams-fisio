@@ -22,6 +22,8 @@ duration: Pendiente confirmación de fechas 2021.
 programa: >
 profesores: >
 objetivos: >
+metodologiadocente: >
+certificado: >
 informaciongeneral: test
 ---
 PRÓXIMAMENTE FECHAS PENDIENTES DE CONFIRMACIÓN EN 2021

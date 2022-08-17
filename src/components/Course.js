@@ -38,12 +38,12 @@ const Course = (courseInfo) => {
     {
       name: "Metodología docente",
       icon: "",
-      content: "Stuff 5",
+      contentfieldcontent: "metodologiadocente",
     },
     {
       name: "Acreditación y/o certificado",
       icon: "",
-      content: "Stuff 6",
+      contentfield: "certificado",
     },
   ];
 
