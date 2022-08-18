@@ -6,7 +6,7 @@ import { CourseTypes } from "./CourseTypes";
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map((item) => (
-      <Course type={CourseTypes.TwoColumn} courseInfo={item} />
+      <Course type='TwoColumn' courseInfo={item} />
     ))}
   </div>
 );

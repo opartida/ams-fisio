@@ -29,53 +29,34 @@ duration: 20 horas (1seminario teórico-práctico).
 objetivos: >
 metodologiadocente: >
 certificado: >
-informaciongeneral: >
-		
+informaciongeneral: >		
   <ul>
-  	<li>ACREDITACIÓN: Solicitada Acreditación a la Comisión de Formación Continuada de las profesiones Sanitarias del Sistema Nacional de Salud. Ediciones anteriores acreditadas con 3,3&nbsp;créditos. Créditos validados en todo el territorio nacional.</li>
-  </ul>
-
-
+  	<li>ACREDITACIÓN: Solicitada Acreditación a la Comisión de Formación Continuada de las profesiones Sanitarias del Sistema Nacional de Salud. Ediciones anteriores acreditadas con 3,3&nbsp;créditos.  Créditos validados en todo el territorio nacional.</li>
+  </ul>  
   <ul>
   	<li>LUGAR DE CELEBRACIÓN:&nbsp;Aulas de Formación Fisiocampus Madrid. Calle San Máximo 31, 4º planta- Módulo 5, 28041 Madrid.</li>
-  </ul>
-
-
+  </ul>  
   <ul>
   	<li>DURACIÓN: 20 horas (1seminario teórico-práctico).</li>
-  </ul>
-
-
+  </ul>  
   <ul>
   	<li>FECHAS: 21, 22 y 23 de octubre de&nbsp;2022</li>
-  </ul>
-
-
+  </ul>  
   <ul>
   	<li>HORARIOS: Viernes: 16:00-21:00 , sábado: 9:00&nbsp;– 14:30 y 15:30 – 19:30 y domingo: 9:00&nbsp;– 14:30.</li>
-  </ul>
-
-
+  </ul>  
   <ul>
   	<li>PRECIO: 325€&nbsp;&nbsp; 10 % de descuento al matricularse 2 personas juntas (limitado a las 3 primeras parejas en inscribirse)</li>
-  </ul>
-
-
+  </ul>  
   <ul>
   	<li>Nº DE PLAZAS: 25&nbsp;(por riguroso orden de matriculación).</li>
-  </ul>
-
-
+  </ul>  
   <ul>
   	<li>RESERVA DE PLAZAS / MATRICULACIÓN:&nbsp;<a href="http://www.fisioterapiasuelopelvico.com/" style="color: rgb(7, 130, 193);">www.fisioterapiasuelopelvico.com</a>&nbsp;(apartado FORMACIÓN),</li>
-  </ul>
-
-
+  </ul>  
   <ul>
   	<li>INFORMACIÓN: cursos.fisioterapiasuelopelvico@gmail.com</li>
-  </ul>
-
-
+  </ul>  
   <ul>
   	<li>ESTANCIAS CLÍNICAS: 10% de descuento en la unidad de fisioterapia de suelo pélvico del servicio de urología del Hospital San Rafael.</li>
   </ul>

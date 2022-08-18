@@ -11,11 +11,11 @@ import { Link } from "gatsby";
 
 const RenderCourse = ({ type, courseInfo }) => {
   switch (type) {
-    case CourseTypes.Card:
+    case 'Card':
       return <CourseCard courseInfo={courseInfo} />;
-    case CourseTypes.TwoColumn:
+    case 'TwoColumn':
       return <CourseTwoColumn courseInfo={courseInfo} />;
-    case CourseTypes.Tabs:
+    case 'Tabs':
       return <CourseTabs courseInfo={courseInfo} />;
     default:
       return <CourseCard courseInfo={courseInfo} />;
