@@ -1,32 +1,15 @@
-import * as React from 'react'
-import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import { Link } from 'gatsby'
+import * as React from "react";
+import PropTypes from "prop-types";
+import Course from "./Course";
+import { CourseTypes } from "./CourseTypes";
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map((item) => (
-      <div key={item.text} className="column is-6">
-        <section className="section box" style={{ minHeight: '612px' }}>
-          <div className="has-text-centered">
-            <div
-              style={{
-                width: '100%',
-                display: 'inline-block',
-              }}
-            >
-              <PreviewCompatibleImage imageInfo={item} />
-            </div>
-          </div>
-          <p>{item.text}</p>
-          <Link className="button is-primary" to={item.url}>
-            Mas Info →
-          </Link>
-        </section>
-      </div>
+      <Course type={CourseTypes.TwoColumn} courseInfo={item} />
     ))}
   </div>
-)
+);
 
 FeatureGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
@@ -34,8 +17,9 @@ FeatureGrid.propTypes = {
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       text: PropTypes.string,
       url: PropTypes.string,
+      title: PropTypes.string,
     })
   ),
-}
+};
 
-export default FeatureGrid
+export default FeatureGrid;

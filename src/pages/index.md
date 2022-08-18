@@ -37,16 +37,22 @@ carousel:
 intro:
   blurbs:    
     - image: /img/cursos_portada/avanzado.png
+      title: > 
+        Ecografia en disfunciones abdomino-perineales (ECODAP) Avanzado
       text: >
         Este curso de ecografía está dirigido a aquellos profesionales sanitarios que quieren profundizar en el conocimiento de las posibilidades del uso de la ecografía en el campo de la fisioterapia de suelo pélvico y en su aplicación práctica. Ecografía en el campo del dolor pélvico, en el hombre, el niño/a y la valoración del diafragma toracico, son los ámbitos en los que podrá mejorar su técnica ecográfica.
       url: >
         https://www.fisiocampus.com/cursos-online-fisioterapia/disfunciones-abdomino-perineales-ecodap-teoria-practica-y-aplicaciones-clinicas-avanzado
     - image: /img/cursos_portada/completo.png
+      title: > 
+        Ecografia en disfunciones abdomino-perineales (ECODAP) Completo
       text: >
         Este curso de ecografía está dirigido a aquellos profesionales sanitarios que quieren profundizar en el conocimiento de las posibilidades del uso de la ecografía en el campo de la fisioterapia de suelo pélvico y en su aplicación práctica. Ecografía en el campo del dolor pélvico, en el hombre, el niño/a y la valoración del diafragma toracico, son los ámbitos en los que podrá mejorar su técnica ecográfica.
       url: >
         https://www.fisiocampus.com/cursos-online-fisioterapia/disfunciones-abdomino-perineales-ecodap-teoria-practica-y-aplicaciones-clinicas-completo
     - image: /img/cursos_portada/basico.png
+      title: > 
+        Ecografia en disfunciones abdomino-perineales (ECODAP) Básico
       text: >
          Curso de ecografía para quien quiere disponer de una formación práctica en las técnicas básicas de ecografía en el campo de la fisioterapia de suelo pélvico. Te permitirá mejorar de forma exponencial la precisión en la valoración de tus pacientes y te abrirá la posibilidad de realizar tratamientos que sólo la imagen ecográfica puede hacer. Material al que siempre podrás acceder y que te guiará en cualquier exploración funcional ecográfica que habitualmente se realiza en fisioterapia de suelo pélvico.
       url: >

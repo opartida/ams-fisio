@@ -173,10 +173,11 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                gatsbyImageData(width: 340, quality: 100, layout: CONSTRAINED)
+                gatsbyImageData(quality: 100, layout: CONSTRAINED)
               }
             }
             text
+            title
             url
           }
           heading
