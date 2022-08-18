@@ -68,8 +68,9 @@ const CourseTwoColumn = ({ courseInfo }) => {
   );
 };
 
-const CourseTabs = (courseInfo) => {
+const CourseTabs = ({courseInfo}) => {
   const [activeTab, setActiveTab] = useState("Información general");
+  console.log('entro', courseInfo)
   const heroImage =
     getImage(courseInfo.featuredimage) || courseInfo.featuredimage;
   const ActiveTabContent = ({ content }) => <HTMLContent content={content} />;

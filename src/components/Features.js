@@ -1,7 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import Course from "./Course";
-import { CourseTypes } from "./CourseTypes";
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">

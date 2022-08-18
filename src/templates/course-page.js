@@ -15,9 +15,6 @@ export const CoursePageTemplate = ({
   place,
   duration,
   tags,
-  longtitle,
-  title,
-  subtitle,
   featuredimage,
   informaciongeneral,
   programa,
@@ -49,7 +46,7 @@ export const CoursePageTemplate = ({
         <div className="container content">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <Course {...courseInfo} />
+              <Course courseInfo={courseInfo} type='Tabs' />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
                   <h4>Tags</h4>
