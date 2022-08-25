@@ -6,8 +6,9 @@ heading: Cursos Online Ecografia
 subheading: Formados y preparados para tratar el dolor complejo y persistente
 mainpitch:
   title: AMS Fisioterapia Suelo Pélvico
+  image: /src/equipo.jpg
   description: >
-    es una web destinada a pacientes con disfunciones de suelo pélvico y/o problemas de dolor pélvico crónico, así como a fisioterapeutas que quieren formarse en este campo. 20 años de experiencia clínica, 15 años realizando cursos de formación de postgrado en las mejores universidades españolas, la tecnología más avanzada y la constante actualización del equipo de profesionales que dirige el Dr. Antonio Meldaña Sánchez en la evidencia científica publicada son la base de nuestro trabajo.
+    Es una web destinada a pacientes con disfunciones de suelo pélvico y/o problemas de dolor pélvico crónico, así como a fisioterapeutas que quieren formarse en este campo. 20 años de experiencia clínica, 15 años realizando cursos de formación de postgrado en las mejores universidades españolas, la tecnología más avanzada y la constante actualización del equipo de profesionales que dirige el Dr. Antonio Meldaña Sánchez en la evidencia científica publicada son la base de nuestro trabajo.
 description: >-
 carousel: 
   - image: /img/carousel/curso-hombre.webp

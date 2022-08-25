@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
-import { getImage } from 'gatsby-plugin-image'
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, graphql } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
 
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
-import FullWidthImage from '../components/FullWidthImage'
-import Carousel from '../components/Carousel'
+import Layout from "../components/Layout";
+import Features from "../components/Features";
+import BlogRoll from "../components/BlogRoll";
+import FullWidthImage from "../components/FullWidthImage";
+import Carousel from "../components/Carousel";
 import { CookieConsent, OPTIONS } from "react-cookie-consent";
 
 // eslint-disable-next-line
@@ -21,19 +21,20 @@ export const IndexPageTemplate = ({
   intro,
   carousel,
 }) => {
-  const heroImage = getImage(image) || image
+  const heroImage = getImage(image) || image;
+  const teamImage = getImage(mainpitch.image) || mainpitch.image;
   const getSlides = (carousel) => {
     return carousel.map((elem) => {
-      const image = getImage(elem.image) || elem.image
+      const image = getImage(elem.image) || elem.image;
       return (
         <FullWidthImage
           img={image}
           title={elem.title}
           subheading={elem.subheading}
         />
-      )
-    })
-  }
+      );
+    });
+  };
   return (
     <>
       <div>
@@ -55,8 +56,17 @@ export const IndexPageTemplate = ({
                           <span className=" is-primary">{mainpitch.title}</span>
                         </h1>
                       </div>
-                      <div className="tile">
-                        <h3 className="subtitle">{mainpitch.description}</h3>
+                      <div className="columns is-6 is-variable">
+                        <div className="column is-6">
+                          <FullWidthImage img={teamImage} />
+                        </div>
+                        <div className="column is-6">
+                          <div className="tile">
+                            <h3 className="subtitle">
+                              {mainpitch.description}
+                            </h3>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div className="columns">
@@ -99,7 +109,7 @@ export const IndexPageTemplate = ({
       </div>
     </>
   );
-}
+};
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -112,10 +122,10 @@ IndexPageTemplate.propTypes = {
     blurbs: PropTypes.array,
   }),
   carousel: PropTypes.array,
-}
+};
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -130,8 +140,8 @@ const IndexPage = ({ data }) => {
         carousel={frontmatter.carousel}
       />
     </Layout>
-  )
-}
+  );
+};
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
@@ -139,9 +149,9 @@ IndexPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -167,6 +177,11 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: CONSTRAINED)
+            }
+          }
         }
         description
         intro {
@@ -186,4 +201,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
